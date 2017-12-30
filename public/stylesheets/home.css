@@ -3,7 +3,7 @@ body, html {
   margin: 0px;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-.centerVertical, #centerWrapper {
+.centerVertical, #centerWrapper, #landingTitle, #landingDescription {
   position: relative;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -61,18 +61,55 @@ body, html {
   background-size: cover;
   color: #C5C1C0; }
 
+#landingWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 600;
+  transform: rotateX(80deg); }
+
+#initialsLogo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#centerWrapper {
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 600; }
+
 #landingTitle {
+  top: 30%;
   margin: 0px; }
+
+.letter {
+  display: inline-block; }
 
 #name {
   color: #F7CE3E; }
 
 #landingDescription {
-  margin: 0px; }
+  top: 30%;
+  margin: 0px;
+  transform-style: preserve-3d;
+  perspective: 600; }
 
 #landingBottom {
   position: absolute;
-  bottom: 80px; }
+  margin-bottom: 80px;
+  bottom: 30%;
+  transform-style: preserve-3d;
+  perspective: 600; }
   #landingBottom p {
     font-size: 1.2em; }
 
