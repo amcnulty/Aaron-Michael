@@ -1,0 +1,104 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.centerVertical, #centerWrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%); }
+
+.centerHorizontal, #landingBottom {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+.centerBoth {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.arrow, .downArrow {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  transition: all .1s ease; }
+
+.arrow:hover, .downArrow:hover {
+  color: white;
+  border-top: 9px solid black;
+  border-right: 9px solid black;
+  box-shadow: 2px -2px 0px; }
+
+.downArrow {
+  transform: rotateZ(135deg);
+  bottom: 0px;
+  cursor: pointer; }
+
+.downArrow:hover {
+  bottom: -8px; }
+
+#landing {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background/vsCode.jpg");
+  background-size: cover;
+  color: #C5C1C0; }
+
+#landingTitle {
+  margin: 0px; }
+
+#name {
+  color: #F7CE3E; }
+
+#landingDescription {
+  margin: 0px; }
+
+#landingBottom {
+  position: absolute;
+  bottom: 80px; }
+  #landingBottom p {
+    font-size: 1.2em; }
+
+#landingDownArrow {
+  margin: 0 auto; }
+
+.downArrow {
+  border-color: #C5C1C0; }
+
+.downArrow:hover {
+  border-color: #F7CE3E;
+  color: #C5C1C0; }
+
+#aboutSection {
+  width: 100%;
+  height: 60vh;
+  background-color: #1A2930; }
+
+#projectsSection {
+  width: 100%;
+  height: 60vh;
+  background-color: #0A1612; }
+
+#contactSection {
+  width: 100%;
+  height: 60vh;
+  background-color: #C5C1C0; }
+
+/*# sourceMappingURL=home.css.map */

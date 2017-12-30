@@ -1,0 +1,22 @@
+.arrow
+    position: relative
+    width: 30px
+    height: 30px
+    border-top: 5px solid black
+    border-right: 5px solid black
+    transition: all .1s ease
+
+.arrow:hover
+    color: white
+    border-top: 9px solid black
+    border-right: 9px solid black
+    box-shadow: 2px -2px 0px
+
+.downArrow
+    @extend .arrow
+    transform: rotateZ(135deg)
+    bottom: 0px
+    cursor: pointer
+
+.downArrow:hover
+    bottom: -8px

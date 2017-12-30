@@ -1,0 +1,20 @@
+extends layout
+
+block stylesheet
+  link(rel='stylesheet', href='/stylesheets/home.css')
+
+block content
+  #landing
+    #centerWrapper
+      h1#landingTitle 
+        | Hi, I'm 
+        span#name Aaron Michael
+      h2#landingDescription
+        | I'm a web developer and programmer living in the San Diego area
+    #landingBottom
+      p Learn more about me
+      #landingDownArrow.downArrow
+  #aboutSection
+  #projectsSection
+  #contactSection
+  script(src="javascripts/home.js" type="text/javascript")

@@ -1,0 +1,58 @@
+@import ../partials/colors
+@import ../partials/reset
+@import ../partials/transforms
+@import ../partials/icons
+
+#landing
+  text-align: center
+  width: 100%
+  height: 100vh
+  background-image: url('../images/background/vsCode.jpg')
+  background-size: cover
+  color: $screen
+
+#centerWrapper
+  @extend .centerVertical
+
+#landingTitle
+  margin: 0px
+
+#name
+  color: $marigold
+
+#landingDescription
+  margin: 0px
+
+#landingBottom
+  @extend .centerHorizontal
+  position: absolute
+  bottom: 80px
+
+  p
+    font-size: 1.2em
+
+#landingDownArrow
+  margin: 0 auto
+
+.downArrow
+  @extend .downArrow
+  border-color: $screen
+
+.downArrow:hover
+  border-color: $marigold
+  color: $screen
+
+#aboutSection
+  width: 100%
+  height: 60vh
+  background-color: $denim
+
+#projectsSection
+  width: 100%
+  height: 60vh
+  background-color: $steel
+
+#contactSection
+  width: 100%
+  height: 60vh
+  background-color: $screen

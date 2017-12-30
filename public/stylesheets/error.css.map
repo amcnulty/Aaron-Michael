@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "error.css",
+	"sources": [
+		"../../sass/stylesheets/error.sass"
+	],
+	"mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAI,GAAG",
+	"names": []
+}
