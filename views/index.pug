@@ -17,6 +17,67 @@ block content
           p Learn more about me
           #landingDownArrow.downArrow
   #aboutSection
+    h2#aboutHeader About Me
+    #techs.aboutInfoBox
+      .infoBoxHeader.casscade
+        h3 Technologies
+        ul.list
+          li.techListItem Javascript
+            img.techIcon(src="../images/logos/techIcons/javascript.png")
+          li.techListItem Java
+            img.techIcon(src="../images/logos/techIcons/java.png")
+          li.techListItem CSS3
+            img.techIcon(src="../images/logos/techIcons/css.png")
+          li.techListItem HTML5
+            img.techIcon(src="../images/logos/techIcons/html.png")
+          li.techListItem MySQL
+            img.techIcon(src="../images/logos/techIcons/mysql.png")
+          li.techListItem MongoDB
+            img.techIcon(src="../images/logos/techIcons/mongodb.png")
+          li.techListItem NodeJS
+            img.techIcon(src="../images/logos/techIcons/nodejs.png")
+          li.techListItem ReactJS
+            img.techIcon(src="../images/logos/techIcons/reactjs.png")
+    #description.aboutInfoBox
+      .infoBoxHeader.casscade
+        h3 What I Do
+        ul.list
+          li Web Development
+          li Software Development
+          li Mobile App Development
+          li Software Testing
+          li Web Apps
+          li Software Servers
+          li Custom APIs
+    #training.aboutInfoBox
+      .infoBoxHeader.casscade
+        h3 Experience
+      p.casscade
+        | I am a <strong>business savvy, highly-motivated,</strong> full stack developer. I utilize my talents in <strong>web development and object oriented programming</strong> to solve complex, real-world problems with a team of high performing developers.
+      p.casscade
+        | I am a certified <strong>full-stack</strong> developer for the web who attended <strong class="addUnderline">UCSD Extension</strong> in San Diego.
+    #btnSection
+      #resumeButton.aboutBtn My Resume
+      #contactButton.aboutBtn Contact Me
   #projectsSection
+    #projectsWrapper
+      h1#projectsHeader My 
+        span.marigold Projects
+      .projectWrapper
+        .project
+      .projectWrapper
+        .project
+      .projectWrapper
+        .project
+      .projectWrapper
+        .project
+      .projectWrapper
+        .project
+      .projectWrapper
+        .project
+  #paralaxSection
   #contactSection
+    #contactWrapper
+      h1#contactHeader Contact Me
+  include nav/footer.pug
   script(src="javascripts/home.js" type="text/javascript")

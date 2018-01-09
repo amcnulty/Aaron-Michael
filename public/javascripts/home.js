@@ -1,4 +1,27 @@
 window.onload = function() {
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > $('#aboutSection').offset().top - 200) {
+            animateAboutSection();
+        }
+    });
+
+    function animateAboutSection() {
+        animateHeaders();
+        animateTechs();
+    }
+
+    function animateHeaders() {
+        for (var i = 0; i < aboutHeaders.length; i++) {
+            TweenLite.to(aboutHeaders[i], .3, {scale: 1, autoAlpha: 1, delay: i / 8, ease: Power0.easeIn});
+        }
+    }
+
+    function animateTechs() {
+        for (var i = 0; i < techs.length; i++) {
+            TweenLite.to(techs[i], 1, {scale: 1, autoAlpha: 1, rotationX: 360, delay: i / 10, ease: Power0.ease});
+        }
+    }
+
     function scrollTo(section) {
         $('html, body').animate({
             scrollTop: section.offset().top
@@ -44,14 +67,22 @@ window.onload = function() {
             }
         });
     }
+
+    function prepareAnimations() {
+        for (var i = 0; i < aboutHeaders.length; i++) {
+            TweenLite.set(aboutHeaders[i], {scale: .8, autoAlpha: 0});
+        }
+    }
     /** The down arrow in the landing section */
     var $landingDownArrow = $('#landingDownArrow');
     var initialsLogo = document.getElementById('initialsLogo');
     var landing = document.getElementById('landing');
     var landingWrapper = document.getElementById('landingWrapper');
     var landingBottom = document.getElementById('landingBottom');
-
     var landingDescription = document.getElementById('landingDescription');
+    // About section
+    var aboutHeaders = document.getElementsByClassName('casscade');
+    var techs = document.getElementsByClassName('techListItem');
     /** Click event for the down arrow in the landing section */
     $landingDownArrow.on('click', function(e) {
         scrollTo($('#aboutSection'));
@@ -71,4 +102,5 @@ window.onload = function() {
 
     splitText(landingDescription);
     splitText(document.getElementById('landingBottom').children[0]);
+    prepareAnimations();
 }
