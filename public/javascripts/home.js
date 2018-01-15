@@ -62,7 +62,7 @@ window.onload = function() {
         }
         shuffleArray(randomArray, function(array) {
             for (var i = 0; i < element.children.length; i++) {
-                TweenLite.set(element.children[array[i]], {z: 600});
+                TweenLite.set(element.children[array[i]], {z: 600, visibility: 'visible'});
                 TweenLite.to(element.children[array[i]], .3, {z: 0, delay: (i / 100), ease:Power0.easeIn});
             }
         });
@@ -90,7 +90,6 @@ window.onload = function() {
     
     var tl = new TimelineLite({});
 
-    TweenLite.set(initialsLogo, {z: 600});
     tl.to(initialsLogo, .8, {rotationY: 1080, ease:Power0.easeIn}, 0)
         .to(initialsLogo, 2, {z:0, ease: Bounce.easeOut}, 0)
         .to(initialsLogo, .6, {rotationY: 680, ease: Power0.easeIn}, .8)

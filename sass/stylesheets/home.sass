@@ -28,11 +28,11 @@
   height: 100px
   left: 50%
   top: 45%
-  -webkit-transform: translate(-50%, -50%)
-  -moz-transform: translate(-50%, -50%)
-  -ms-transform: translate(-50%, -50%)
-  -o-transform: translate(-50%, -50%)
-  transform: translate(-50%, -50%)
+  -webkit-transform: translate(-50%, -50%) translateZ(600px)
+  -moz-transform: translate(-50%, -50%) translateZ(600px)
+  -ms-transform: translate(-50%, -50%) translateZ(600px)
+  -o-transform: translate(-50%, -50%) translateZ(600px)
+  transform: translate(-50%, -50%) translateZ(600px)
 
 #centerWrapper
   height: 100vh
@@ -57,6 +57,7 @@
   margin: 0px
   transform-style: preserve-3d
   perspective: 600
+  visibility: hidden
 
 #landingBottom
   @extend .centerHorizontal
@@ -68,6 +69,7 @@
 
   p
     font-size: 1.2em
+    visibility: hidden
 
 #landingDownArrow
   margin: 0 auto
