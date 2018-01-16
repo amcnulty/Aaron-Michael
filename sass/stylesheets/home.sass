@@ -160,7 +160,7 @@
 #btnSection
   @extend .centerHorizontal
   position: absolute
-  bottom: 0px
+  bottom: 100px
 
 .aboutBtn
   display: inline-block
@@ -179,6 +179,28 @@
   background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
   background-image: -moz-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
   background-image: linear-gradient(to bottom, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
+  animation: 4s linear colorPulse infinite
+
+@keyframes colorPulse
+  0%
+    box-shadow: 0px 0px 10px 2px green
+    border-color: green
+  20%
+    box-shadow: 0px 0px 10px 2px blue
+    border-color: blue
+  40%
+    box-shadow: 0px 0px 10px 2px red
+    border-color: red
+  60%
+    box-shadow: 0px 0px 10px 2px $marigold
+    border-color: $marigold
+  80%
+    box-shadow: 0px 0px 10px 2px pink
+    border-color: pink
+  100%
+    box-shadow: 0px 0px 10px 2px green
+    box-shadow: 0px 0px 1px 1px green
+    border-color: green
 
 #resumeButton
 
@@ -215,7 +237,7 @@
   box-sizing: border-box
 
 .project:hover
-  border: 1px solid $marigold
+  animation: 4s linear colorPulse infinite
 
 #paralaxSection
   position: relative

@@ -208,7 +208,7 @@ footer {
 
 #btnSection {
   position: absolute;
-  bottom: 0px; }
+  bottom: 100px; }
 
 .aboutBtn {
   display: inline-block;
@@ -226,7 +226,29 @@ footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0.5)), to(rgba(10, 22, 18, 0)));
   background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
   background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
-  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0)); }
+  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
+  animation: 4s linear colorPulse infinite; }
+
+@keyframes colorPulse {
+  0% {
+    box-shadow: 0px 0px 10px 2px green;
+    border-color: green; }
+  20% {
+    box-shadow: 0px 0px 10px 2px blue;
+    border-color: blue; }
+  40% {
+    box-shadow: 0px 0px 10px 2px red;
+    border-color: red; }
+  60% {
+    box-shadow: 0px 0px 10px 2px #F7CE3E;
+    border-color: #F7CE3E; }
+  80% {
+    box-shadow: 0px 0px 10px 2px pink;
+    border-color: pink; }
+  100% {
+    box-shadow: 0px 0px 10px 2px green;
+    box-shadow: 0px 0px 1px 1px green;
+    border-color: green; } }
 
 #projectsSection {
   width: 100%;
@@ -259,7 +281,7 @@ footer {
   box-sizing: border-box; }
 
 .project:hover {
-  border: 1px solid #F7CE3E; }
+  animation: 4s linear colorPulse infinite; }
 
 #paralaxSection {
   position: relative;
