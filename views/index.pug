@@ -17,7 +17,10 @@ block content
           p Learn more about me
           #landingDownArrow.downArrow
   #aboutSection
-    h2#aboutHeader About Me
+    .headingWrapper
+      h1.headingTitle About Me
+      p.headingText These are the technologies that I work with every day.
+      .underline
     #techs.aboutInfoBox
       .infoBoxHeader.casscade
         h3 Technologies
@@ -61,8 +64,12 @@ block content
       #contactButton.aboutBtn Contact Me
   #projectsSection
     #projectsWrapper
-      h1#projectsHeader My 
-        span.marigold Projects
+      .headingWrapper
+        h1.headingTitle
+          | My 
+          span.marigold Projects
+        p.headingText Browse my work and have fun expoloring the various web apps I have created.
+        .underline
       .projectWrapper
         .project
       .projectWrapper
@@ -78,6 +85,9 @@ block content
   #paralaxSection
   #contactSection
     #contactWrapper
-      h1#contactHeader Contact Me
+      .headingWrapper
+        h1.headingTitle Contact Me
+        p.headingText I would like to hear from you! Complete the form below to get ahold of me.
+        .underline
   include nav/footer.pug
   script(src="javascripts/home.js" type="text/javascript")

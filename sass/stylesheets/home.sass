@@ -98,20 +98,38 @@
   display: block
   clear: both
 
-#aboutHeader
+.headingWrapper
+  width: 100%
   text-align: center
+
+.headingTitle
+  font-size: 3em
+  margin: 0px 0px 60px 0px
+
+.headingText
+  font-size: .8em
+  font-style: italic
+
+.underline
+  width: 60px
+  height: 10px
+  background-color: $marigold
+  margin: 60px auto 60px auto
+
+#aboutSection
+  strong
+    color: whitesmoke
 
 .aboutInfoBox
   width: 33%
   float: left
 
 .infoBoxHeader
-  // opacity: 0
   width: 300px
   margin: 0 auto
   h3
     text-align: center
-    border-bottom: 1px solid $screen
+    border-bottom: 1px solid $marigold
 
 .list
   padding: 0px
@@ -172,6 +190,7 @@
   color: $screen
   background-color: $steel
   box-shadow: 0px 0px 50px 100px $steel
+  font-size: 1.5em
 
 #projectsSection:after
   content: ''
@@ -181,11 +200,6 @@
 #projectsWrapper
   width: 700px
   margin: 0 auto
-
-#projectsHeader
-  text-align: center
-  padding: 30px 0px 30px 0px
-  border-bottom: 2px solid $marigold
 
 .projectWrapper
   width: 50%
@@ -218,6 +232,7 @@
   padding: 100px 0px 100px 0px
   background-color: $screen
   box-shadow: 0px 0px 50px 100px $screen
+  font-size: 1.5em
 
 #contactWrapper
   width: 80%

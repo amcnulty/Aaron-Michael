@@ -149,8 +149,26 @@ footer {
   display: block;
   clear: both; }
 
-#aboutHeader {
+.headingWrapper {
+  width: 100%;
   text-align: center; }
+
+.headingTitle {
+  font-size: 3em;
+  margin: 0px 0px 60px 0px; }
+
+.headingText {
+  font-size: .8em;
+  font-style: italic; }
+
+.underline {
+  width: 60px;
+  height: 10px;
+  background-color: #F7CE3E;
+  margin: 60px auto 60px auto; }
+
+#aboutSection strong {
+  color: whitesmoke; }
 
 .aboutInfoBox {
   width: 33%;
@@ -161,7 +179,7 @@ footer {
   margin: 0 auto; }
   .infoBoxHeader h3 {
     text-align: center;
-    border-bottom: 1px solid #C5C1C0; }
+    border-bottom: 1px solid #F7CE3E; }
 
 .list {
   padding: 0px; }
@@ -215,7 +233,8 @@ footer {
   padding: 100px 0px 100px 0px;
   color: #C5C1C0;
   background-color: #0A1612;
-  box-shadow: 0px 0px 50px 100px #0A1612; }
+  box-shadow: 0px 0px 50px 100px #0A1612;
+  font-size: 1.5em; }
 
 #projectsSection:after {
   content: '';
@@ -225,11 +244,6 @@ footer {
 #projectsWrapper {
   width: 700px;
   margin: 0 auto; }
-
-#projectsHeader {
-  text-align: center;
-  padding: 30px 0px 30px 0px;
-  border-bottom: 2px solid #F7CE3E; }
 
 .projectWrapper {
   width: 50%;
@@ -261,7 +275,8 @@ footer {
   height: 70vh;
   padding: 100px 0px 100px 0px;
   background-color: #C5C1C0;
-  box-shadow: 0px 0px 50px 100px #C5C1C0; }
+  box-shadow: 0px 0px 50px 100px #C5C1C0;
+  font-size: 1.5em; }
 
 #contactWrapper {
   width: 80%;
