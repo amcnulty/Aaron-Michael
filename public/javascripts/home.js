@@ -3,7 +3,16 @@ window.onload = function() {
         if ($(this).scrollTop() > $('#aboutSection').offset().top - 200) {
             animateAboutSection();
         }
+        for (let i = 0; i < projects.length; i++) {
+            if ($(this).scrollTop() > $(projects[i]).offset().top - 700) {
+                fadeIntoView(projects[i]);
+            }
+        }
     });
+
+    function fadeIntoView(element) {
+        TweenLite.to(element, .3, {autoAlpha: 1, top: 0, ease:Power1.easeIn});
+    }
 
     function animateAboutSection() {
         animateHeaders();
@@ -69,8 +78,11 @@ window.onload = function() {
     }
 
     function prepareAnimations() {
-        for (var i = 0; i < aboutHeaders.length; i++) {
+        for (let i = 0; i < aboutHeaders.length; i++) {
             TweenLite.set(aboutHeaders[i], {scale: .8, autoAlpha: 0});
+        }
+        for (let i = 0; i < projects.length; i++) {
+            TweenLite.set(projects[i], {autoAlpha: 0, top: 20});
         }
     }
     /** The down arrow in the landing section */
@@ -83,6 +95,8 @@ window.onload = function() {
     // About section
     var aboutHeaders = document.getElementsByClassName('casscade');
     var techs = document.getElementsByClassName('techListItem');
+    // Projects section
+    var projects = document.getElementsByClassName('project');
     /** Click event for the down arrow in the landing section */
     $landingDownArrow.on('click', function(e) {
         scrollTo($('#aboutSection'));
