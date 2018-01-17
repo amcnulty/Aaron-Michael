@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Whoop It Up",
+    "description": "Whoop it up is an event organization service where users can create events and invite other users to their events. Events that users are invited to are listed on the user profile page allowing users to easily manage their events.",
+    "github": "https://github.com/amcnulty/Whoop-It-Up",
+    "url": "https://whoopitup.herokuapp.com/",
+    "poster": "./images/projects/whoopItUp/poster.jpg"
+  },
+  {
+    "title": "Pink Trivia",
+    "description": "A trivia game for mobile and desktop web browsers. Test your trivia skills and test your knowledge in several categories. This game generates questions from the Open Trivia Database API.",
+    "github": "https://github.com/amcnulty/TriviaGame",
+    "url": "https://amcnulty.github.io/TriviaGame/",
+    "poster": "./images/projects/pinkTrivia/poster.jpg"
+  },
+  {
+    "title": "Stars & Stripes",
+    "description": "A site for Stars and Stripes General Contracting LLC located in Johnson County, Kansas. This is an advertisement site for the company that highlights it's services and work. Their is a contact field for a point of contact for customers.",
+    "github": "https://github.com/amcnulty/SSGC",
+    "url": "http://amcnulty.github.io/SSGC/",
+    "poster": "./images/projects/SSGC/poster.jpg"
+  },
+  {
+    "title": "Contractor's Garage",
+    "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. The Google Maps API is used to display garage locations.",
+    "github": "https://github.com/amcnulty/TCG",
+    "url": "http://www.contractorsgarage.net",
+    "poster": "./images/projects/TCG/poster.jpg"
+  },
+  {
+    "title": "Mongoose Scraper",
+    "description": "A page scraper to display articles from the New York Times. This app utilizes Mongoose ORM to connect with the document datastore. The app is run on an express server and is built in the model view controller framework.",
+    "github": "https://github.com/amcnulty/Mongoose-Scraper",
+    "url": "https://mongoosescraper.herokuapp.com/",
+    "poster": "./images/projects/mongooseScraper/poster.jpg"
+  },
+  {
+    "title": "RPS Multiplayer",
+    "description": "An online game of rock paper scissors lizard Spock for web browsers. This is a two player game formated for desktop and mobile. There is also messaging functionality included in the game. The game uses a Firebase database for storing data.",
+    "github": "https://github.com/amcnulty/RPS_Multiplayer",
+    "url": "https://amcnulty.github.io/RPS_Multiplayer/",
+    "poster": "./images/projects/RPSMultiplayer/poster.jpg"
+  }
+]

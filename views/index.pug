@@ -70,18 +70,8 @@ block content
           span.marigold Projects
         p.headingText Browse my work and have fun expoloring the various web apps I have created.
         .underline
-      .projectWrapper
-        .project
-      .projectWrapper
-        .project
-      .projectWrapper
-        .project
-      .projectWrapper
-        .project
-      .projectWrapper
-        .project
-      .projectWrapper
-        .project
+      each val in projects
+        include components/project
   #paralaxSection
   #contactSection
     #contactWrapper

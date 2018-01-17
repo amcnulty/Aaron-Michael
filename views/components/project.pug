@@ -1,0 +1,13 @@
+.projectWrapper
+  .project
+    img.child(src=val.poster, alt=val.title)
+    .vale.child
+      a.child.inactive(href=val.url)
+      h3=val.title
+      p=val.description
+      a.codeButton.projectButton.inactive(href=val.github)
+        | GitHub
+        img(src="./images/logos/techIcons/github.png", alt="github")
+      a.linkButton.projectButton.inactive(href=val.url)
+        | Visit
+        .rightArrow

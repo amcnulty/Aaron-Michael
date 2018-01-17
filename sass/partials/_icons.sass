@@ -1,22 +1,32 @@
 .arrow
-    position: relative
-    width: 30px
-    height: 30px
-    border-top: 5px solid black
-    border-right: 5px solid black
-    transition: all .1s ease
+  position: relative
+  width: 30px
+  height: 30px
+  border-top: 5px solid black
+  border-right: 5px solid black
+  transition: all .1s ease
+  cursor: pointer
+  border-color: $screen
 
 .arrow:hover
-    color: white
-    border-top: 9px solid black
-    border-right: 9px solid black
-    box-shadow: 2px -2px 0px
+  border-top: 9px solid black
+  border-right: 9px solid black
+  box-shadow: 2px -2px 0px
+  border-color: $marigold
+  color: $screen
 
 .downArrow
-    @extend .arrow
-    transform: rotateZ(135deg)
-    bottom: 0px
-    cursor: pointer
+  @extend .arrow
+  transform: rotateZ(135deg)
+  bottom: 0px
 
 .downArrow:hover
-    bottom: -8px
+  bottom: -8px
+
+.rightArrow
+  @extend .arrow
+  transform: rotateZ(45deg)
+  right: 0px
+
+.rightArrow:hover
+  right: -8px
