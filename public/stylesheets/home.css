@@ -70,6 +70,98 @@ footer {
   height: 300px;
   background-color: #0A1612; }
 
+input {
+  font-size: 100%; }
+
+input:focus {
+  outline: none; }
+
+.input {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 1em;
+    margin-width: 100%;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+.input-field {
+  margin-top: 1em;
+  padding: .85em .15em;
+  width: 100%;
+  background: transparent;
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box; }
+
+.input-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.25em;
+  width: 100%;
+  height: calc(100% - 1em);
+  pointer-events: none;
+  text-align: left;
+  display: inline-block;
+  color: #0A1612;
+  font-size: 70.25%;
+  user-select: none;
+  box-sizing: border-box; }
+
+.input-label-content {
+  position: absolute;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+  transition: transform .3s ease-out; }
+
+.input-label::before,
+.input-label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 1px solid #0A1612; }
+
+.input-label::after {
+  border-bottom: 4px solid #F7CE3E;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform .3s ease; }
+
+.input-field:focus + .input-label::after,
+.input-filled + .input-label::after {
+  transform: translate3d(0, 0, 0); }
+
+.input-field:focus + .input-label .input-label-content,
+.input-filled + .input-label .input-label-content {
+  transform: translate3d(0, -40%, 0); }
+
+.button {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  font-weight: bold;
+  border: 1px solid #0A1612;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0)), to(rgba(10, 22, 18, 0.5)));
+  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5));
+  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5));
+  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5)); }
+
+.button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0.5)), to(rgba(10, 22, 18, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
+  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
+  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
+  animation: 4s linear colorPulse infinite; }
+
 #landing {
   text-align: center;
   width: 100%;
@@ -212,25 +304,6 @@ footer {
   position: absolute;
   bottom: 100px; }
 
-.aboutBtn {
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-  font-weight: bold;
-  border: 1px solid #0A1612;
-  cursor: pointer;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0)), to(rgba(10, 22, 18, 0.5)));
-  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5));
-  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5));
-  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5)); }
-
-.aboutBtn:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0.5)), to(rgba(10, 22, 18, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
-  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
-  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
-  animation: 4s linear colorPulse infinite; }
-
 @keyframes colorPulse {
   0% {
     box-shadow: 0px 0px 10px 2px green;
@@ -354,17 +427,113 @@ footer {
 
 #contactSection {
   width: 100%;
-  height: 70vh;
   padding: 100px 0px 100px 0px;
   background-color: #C5C1C0;
+  color: #0A1612;
   box-shadow: 0px 0px 50px 100px #C5C1C0;
   font-size: 1.5em; }
 
+#contactSection:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 #contactWrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 #contactHeader {
   text-align: center; }
+
+#contactForm {
+  width: 60%;
+  float: left; }
+
+#messageWrapper {
+  box-sizing: border-box;
+  margin: 1em; }
+
+#message {
+  font-size: 100%;
+  resize: none;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 4px solid rgba(255, 255, 255, 0);
+  background-color: #1A2930;
+  color: #C5C1C0; }
+
+#message:focus, .textarea-filled {
+  outline: none;
+  border: 4px solid #F7CE3E; }
+
+#submitButton {
+  margin: 1em; }
+
+aside {
+  width: 40%;
+  float: left;
+  padding-left: 80px;
+  box-sizing: border-box; }
+
+#sideContent {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 20px 20px 70px 0px #0A1612;
+  box-sizing: border-box; }
+
+#myPhoto {
+  display: block;
+  width: 100%;
+  max-width: 242.47px;
+  max-height: 300px;
+  margin: 0 auto; }
+
+.contactLink {
+  display: block;
+  margin: 1em 0em;
+  font-size: .8em; }
+
+.socialIcon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 6px; }
+  .socialIcon div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px; }
+
+.blackIcon {
+  background-size: contain;
+  transition: opacity .3s ease; }
+
+.blackIcon:hover {
+  opacity: 0; }
+
+.redIcon {
+  background-size: contain; }
+
+#githubIcon .redIcon {
+  background-image: url("../images/logos/socialMediaIcons/github_red.png"); }
+
+#githubIcon .blackIcon {
+  background-image: url("../images/logos/socialMediaIcons/github_black.png"); }
+
+#linkedinIcon .redIcon {
+  background-image: url("../images/logos/socialMediaIcons/linkedin_red.png"); }
+
+#linkedinIcon .blackIcon {
+  background-image: url("../images/logos/socialMediaIcons/linkedin_black.png"); }
+
+#stackOverflowIcon .redIcon {
+  background-image: url("../images/logos/socialMediaIcons/stackoverflow_red.png"); }
+
+#stackOverflowIcon .blackIcon {
+  background-image: url("../images/logos/socialMediaIcons/stackoverflow_black.png"); }
 
 /*# sourceMappingURL=home.css.map */

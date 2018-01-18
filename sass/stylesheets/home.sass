@@ -3,6 +3,8 @@
 @import ../partials/transforms
 @import ../partials/icons
 @import ../partials/footer
+@import ../partials/inputs
+@import ../partials/buttons
 
 #landing
   text-align: center
@@ -154,24 +156,24 @@
   position: absolute
   bottom: 100px
 
-.aboutBtn
-  display: inline-block
-  margin: 20px
-  padding: 20px
-  font-weight: bold
-  border: 1px solid $steel
-  cursor: pointer
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0)), to(rgba(10, 22, 18, .5)))
-  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
-  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
-  background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
+// .aboutBtn
+//   display: inline-block
+//   margin: 20px
+//   padding: 20px
+//   font-weight: bold
+//   border: 1px solid $steel
+//   cursor: pointer
+//   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0)), to(rgba(10, 22, 18, .5)))
+//   background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
+//   background-image: -moz-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
+//   background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0), rgba(10, 22, 18, .5))
 
-.aboutBtn:hover
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, .5)), to(rgba(10, 22, 18, 0)))
-  background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
-  background-image: -moz-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
-  background-image: linear-gradient(to bottom, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
-  animation: 4s linear colorPulse infinite
+// .aboutBtn:hover
+//   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, .5)), to(rgba(10, 22, 18, 0)))
+//   background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
+//   background-image: -moz-linear-gradient(top, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
+//   background-image: linear-gradient(to bottom, rgba(10, 22, 18, .5), rgba(10, 22, 18, 0))
+//   animation: 4s linear colorPulse infinite
 
 @keyframes colorPulse
   0%
@@ -303,15 +305,115 @@
 
 #contactSection
   width: 100%
-  height: 70vh
   padding: 100px 0px 100px 0px
   background-color: $screen
+  color: $steel
   box-shadow: 0px 0px 50px 100px $screen
   font-size: 1.5em
 
+#contactSection:after
+  content: ""
+  display: block
+  clear: both
+
 #contactWrapper
-  width: 80%
+  width: 90%
   margin: 0 auto
 
 #contactHeader
   text-align: center
+
+#contactForm
+  width: 60%
+  float: left
+
+#messageWrapper
+  box-sizing: border-box
+  margin: 1em
+
+#message
+  font-size: 100%
+  resize: none
+  width: 100%
+  padding: 1em
+  box-sizing: border-box
+  border: 4px solid rgba(255, 255, 255, 0)
+  background-color: $denim
+  color: $screen
+
+#message:focus, .textarea-filled
+  outline: none
+  border: 4px solid $marigold
+
+#submitButton
+  margin: 1em
+
+aside
+  width: 40%
+  float: left
+  padding-left: 80px
+  box-sizing: border-box
+
+#sideContent
+  width: 100%
+  padding: 50px
+  text-align: center
+  box-shadow: 20px 20px 70px 0px $steel
+  box-sizing: border-box
+
+#myPhoto
+  display: block
+  width: 100%
+  max-width: 242.47px
+  max-height: 300px
+  margin: 0 auto
+
+.contactLink
+  display: block
+  margin: 1em 0em
+  font-size: .8em
+
+.socialIcon
+  position: relative
+  display: inline-block
+  width: 50px
+  height: 50px
+  margin: 6px
+
+  div
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 50px
+    height: 50px
+
+.blackIcon
+  background-size: contain
+  transition: opacity .3s ease
+
+.blackIcon:hover
+  opacity: 0
+
+.redIcon
+  background-size: contain
+
+#githubIcon
+  .redIcon
+    background-image: url('../images/logos/socialMediaIcons/github_red.png')
+  
+  .blackIcon
+    background-image: url('../images/logos/socialMediaIcons/github_black.png')
+
+#linkedinIcon
+  .redIcon
+    background-image: url('../images/logos/socialMediaIcons/linkedin_red.png')
+  
+  .blackIcon
+    background-image: url('../images/logos/socialMediaIcons/linkedin_black.png')
+
+#stackOverflowIcon
+  .redIcon
+    background-image: url('../images/logos/socialMediaIcons/stackoverflow_red.png')
+  
+  .blackIcon
+    background-image: url('../images/logos/socialMediaIcons/stackoverflow_black.png')

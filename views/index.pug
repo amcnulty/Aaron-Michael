@@ -60,8 +60,8 @@ block content
       p.casscade
         | I am a certified <strong>full-stack</strong> developer for the web who attended <strong class="addUnderline">UCSD Extension</strong> in San Diego.
     #btnSection
-      #resumeButton.aboutBtn My Resume
-      #contactButton.aboutBtn Contact Me
+      #resumeButton.button My Resume
+      #contactButton.button Contact Me
   #projectsSection
     #projectsWrapper
       .headingWrapper
@@ -79,5 +79,32 @@ block content
         h1.headingTitle Contact Me
         p.headingText I would like to hear from you! Complete the form below to get ahold of me.
         .underline
+      form#contactForm
+        span.input
+          input.input-field(id="nameInput" type="text")
+          label.input-label(for="nameInput")
+            span.input-label-content Name
+        span.input
+          input.input-field(id="emailInput" type="email")
+          label.input-label(for="emailInput")
+            span.input-label-content Email
+        #messageWrapper
+          textarea#message(name="message", cols="30", rows="10" placeholder="Type your message...")
+        input#submitButton.button(type="submit", value="Send")
+      aside
+        #sideContent
+          img#myPhoto(src="../images/me/me.jpg", alt="Aaron Michael")
+          .underline
+          a.contactLink(href="tel:9132195521") 913-219-5521 
+          a.contactLink(href="mailto:amcnulty88@swbell.net") amcnulty88@swbell.net
+          a#githubIcon.socialIcon(href="https://github.com/amcnulty")
+            .redIcon
+            .blackIcon
+          a#linkedinIcon.socialIcon(href="https://www.linkedin.com/in/aaron-mcnulty/")
+            .redIcon
+            .blackIcon
+          a#stackOverflowIcon.socialIcon(href="https://stackoverflow.com/users/8456358/amcnulty88?tab=profile")
+            .redIcon
+            .blackIcon
   include nav/footer.pug
   script(src="javascripts/home.js" type="text/javascript")
