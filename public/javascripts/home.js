@@ -120,6 +120,7 @@ window.onload = function () {
       });
     }
     TweenLite.set(errorMessage, {autoAlpha: 0});
+    TweenLite.set(successMessage, {left: -400, visibility: 'visible'})
   }
 
   function showErrorMessage(message) {
@@ -138,12 +139,54 @@ window.onload = function () {
 
   function clearForm() {
     $('#nameInput').val('');
+    document.getElementById('nameInput').classList.remove('input-filled');
     $('#emailInput').val('');
+    document.getElementById('emailInput').classList.remove('input-filled');
     $('#message').val('');
+    document.getElementById('message').classList.remove('input-filled');
   }
 
   function showSuccessMessage() {
+    let bezierTop = $(successMessage).position().top;
+    console.log(bezierTop);
+    successMessage.style.left = "50%";
+    let tl = new TimelineLite({onComplete: resetSuccessMessage});
+    tl.from(successMessage, .8, {
+      left: -400,
+      ease: Power1.easeInOut
+    }, 0)
+    .to(successMessage, .8, {
+      scale: 0,
+      bezier: [{top: bezierTop},
+        {top: (bezierTop - 50)},
+        {top: (bezierTop - 75)},
+        {top: (bezierTop - 95)},
+        {top: (bezierTop - 100)},
+        {top: (bezierTop - 110)},
+        {top: (bezierTop - 115)},
+        {top: (bezierTop - 120)},
+        {top: (bezierTop - 115)},
+        {top: (bezierTop - 110)},
+        {top: (bezierTop - 100)},
+        {top: (bezierTop - 95)},
+        {top: (bezierTop - 75)},
+        {top: (bezierTop - 50)},
+        {top: (bezierTop - 0)},
+        {top: (bezierTop + 50)},
+        {top: (bezierTop + 150)}],
+      autoAlpha: 0,
+      ease: Power0.easeIn
+    }, 1.5);
+  }
 
+  function resetSuccessMessage() {
+    TweenLite.set(successMessage, {
+      left: -400,
+      visibility: 'visible',
+      scale: 1,
+      autoAlpha: 1
+    });
+    successMessage.style.top = "50%";
   }
   /** The down arrow in the landing section */
   var $landingDownArrow = $('#landingDownArrow');
@@ -164,6 +207,7 @@ window.onload = function () {
   var submitButton = document.getElementById('submitButton');
   var errorMessage = document.getElementById('errorMessage');
   var sideContent = document.getElementById('sideContent');
+  var successMessage = document.getElementById('successMessage');
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('blur', function (e) {
       if (e.target.value.trim() === '') {
@@ -215,7 +259,6 @@ window.onload = function () {
           }, false);
         }
   });
-
 
   var tl = new TimelineLite({});
 

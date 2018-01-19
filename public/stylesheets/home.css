@@ -209,6 +209,9 @@ input:focus {
   background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
   animation: 4s linear colorPulse infinite; }
 
+body {
+  overflow-x: hidden; }
+
 #landing {
   text-align: center;
   width: 100%;
@@ -593,5 +596,17 @@ aside {
 
 #stackOverflowIcon .blackIcon {
   background-image: url("../images/logos/socialMediaIcons/stackoverflow_black.png"); }
+
+#successMessage {
+  position: fixed;
+  visibility: hidden;
+  background-color: #C5C1C0;
+  color: #0A1612;
+  padding: 60px;
+  border-radius: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
 
 /*# sourceMappingURL=home.css.map */

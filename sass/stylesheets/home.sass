@@ -6,6 +6,9 @@
 @import ../partials/inputs
 @import ../partials/buttons
 
+body
+  overflow-x: hidden
+
 #landing
   text-align: center
   width: 100%
@@ -424,3 +427,15 @@ aside
   
   .blackIcon
     background-image: url('../images/logos/socialMediaIcons/stackoverflow_black.png')
+
+#successMessage
+  position: fixed
+  visibility: hidden
+  background-color: $screen
+  color: $steel
+  padding: 60px
+  border-radius: 6px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1
