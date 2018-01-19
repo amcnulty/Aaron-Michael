@@ -138,6 +138,7 @@ input:focus {
   background: transparent;
   position: relative;
   display: block;
+  color: #C5C1C0;
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
@@ -519,6 +520,10 @@ input:focus {
 
 #submitButton {
   margin: 1em; }
+
+#errorMessage {
+  display: inline-block;
+  color: red; }
 
 aside {
   width: 40%;

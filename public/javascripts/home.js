@@ -119,6 +119,31 @@ window.onload = function () {
         top: 20
       });
     }
+    TweenLite.set(errorMessage, {autoAlpha: 0});
+  }
+
+  function showErrorMessage(message) {
+    errorMessage.innerHTML = message;
+    TweenLite.to(errorMessage, .5, {autoAlpha: 1});
+  }
+
+  function hideErrorMessage() {
+    TweenLite.to(errorMessage, .5, {autoAlpha: 0});
+  }
+
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email.toLowerCase());
+  }
+
+  function clearForm() {
+    $('#nameInput').val('');
+    $('#emailInput').val('');
+    $('#message').val('');
+  }
+
+  function showSuccessMessage() {
+
   }
   /** The down arrow in the landing section */
   var $landingDownArrow = $('#landingDownArrow');
@@ -137,6 +162,7 @@ window.onload = function () {
   var inputs = document.getElementsByClassName('input-field');
   var textarea = document.getElementById('message');
   var submitButton = document.getElementById('submitButton');
+  var errorMessage = document.getElementById('errorMessage');
   var sideContent = document.getElementById('sideContent');
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('blur', function (e) {
@@ -161,7 +187,35 @@ window.onload = function () {
 
   submitButton.addEventListener('click', function(e) {
     e.preventDefault();
-  }, false);
+    hideErrorMessage();
+    if ($('#nameInput').val().trim() === '') {
+      showErrorMessage('Please enter your name!');
+    }
+    else if (!validateEmail($('#emailInput').val().trim()) || $('#emailInput').val().trim() === '')  {
+      showErrorMessage('Please enter valid email address!');
+    }
+    else if ($('#message').val().trim() === '') {
+      showErrorMessage('Please enter a message!');
+    }
+    // Send email
+    if ($('#nameInput').val().trim() !== '' &&
+        validateEmail($('#emailInput').val().trim()) &&
+        $('#message').val().trim() !== '') {
+          $.ajax({
+            method: 'POST',
+            url: './send-message',
+            data: {
+              senderName: $('#nameInput').val().trim(),
+              senderEmail: $('#emailInput').val().trim(),
+              message: $('#message').val().trim()
+            }
+          }).done(function() {
+            clearForm();
+            showSuccessMessage();
+          }, false);
+        }
+  });
+
 
   var tl = new TimelineLite({});
 
