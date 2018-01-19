@@ -19,7 +19,7 @@ const sendMessage = function(data, cb) {
 
 const setMailOptions = function(senderName, senderEmail, message) {
   mailOptions = {
-    from: `${senderName} ${senderEmail}`,
+    from: `${senderName} <aaronmcnulty@gmail.com>`,
     to: `amcnulty88@swbell.net`,
     subject: `New Message From Portfolio Page!`,
     text: message,

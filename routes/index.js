@@ -16,10 +16,8 @@ router.post('/send-message', function(req, res, next) {
     if (err) {
       throw err;
       return res.status(500).end();
-      console.log("There has been an error!");
     }
     else {
-      console.log("Success!");
       return res.status(200).end();
     }
   });
