@@ -209,6 +209,81 @@ input:focus {
   background-image: linear-gradient(to bottom, rgba(10, 22, 18, 0.5), rgba(10, 22, 18, 0));
   animation: 4s linear colorPulse infinite; }
 
+#sideNav {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; }
+  #sideNav ul {
+    padding-left: 10px;
+    list-style-type: none; }
+  #sideNav li {
+    width: 180px;
+    margin: 25px 0px;
+    overflow: hidden; }
+
+.navItemWrapper {
+  display: inline-block; }
+
+.bullet {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  top: 13px;
+  cursor: pointer;
+  z-index: 1;
+  border: 2px solid #F7CE3E;
+  border-color: transparent;
+  box-sizing: border-box; }
+
+.bullet:hover {
+  border-color: #F7CE3E; }
+
+.bullet:hover .bulletInner {
+  background-color: #F7CE3E;
+  opacity: 1; }
+
+.bullet:hover + .sectionText,
+.bullet:hover ~ .textUnderline {
+  right: -20px; }
+
+.bulletInner {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  background-color: #C5C1C0;
+  opacity: .5; }
+
+.bulletActive {
+  opacity: 1 !important; }
+
+.sectionText {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #C5C1C0;
+  right: 100%;
+  transition: all .4s ease-in-out; }
+
+.textUnderline {
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px solid #F7CE3E;
+  width: calc(100% - 35px);
+  margin-top: 10px;
+  float: right;
+  right: 100%;
+  vertical-align: top;
+  transition: all .4s ease-in-out .15s; }
+
 body {
   overflow-x: hidden; }
 

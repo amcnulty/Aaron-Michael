@@ -11,7 +11,25 @@ window.onload = function () {
     if ($(this).scrollTop() > $('#contactSection').offset().top - 100) {
       animateContactSection();
     }
+    if ($(this).scrollTop() > $('#contactSection').offset().top - 50) {
+      activateBullet(contactBullet);
+    }
+    else if ($(this).scrollTop() > $('#projectsSection').offset().top - 50) {
+      activateBullet(projectBullet);
+    }
+    else if ($(this).scrollTop() > $('#aboutSection').offset().top - 50) {
+      activateBullet(aboutBullet);
+    }
+    else activateBullet(homeBullet);
   });
+
+  function activateBullet(bullet) {
+    homeBullet.children[0].children[0].classList.remove('bulletActive');
+    aboutBullet.children[0].children[0].classList.remove('bulletActive');
+    projectBullet.children[0].children[0].classList.remove('bulletActive');
+    contactBullet.children[0].children[0].classList.remove('bulletActive');
+    bullet.children[0].children[0].classList.add('bulletActive');
+  }
 
   function fadeIntoView(element) {
     TweenLite.to(element, .3, {
@@ -188,6 +206,11 @@ window.onload = function () {
     });
     successMessage.style.top = "50%";
   }
+  // Side Navigation
+  var homeBullet = document.getElementById('homeBullet');
+  var aboutBullet = document.getElementById('aboutBullet');
+  var projectBullet = document.getElementById('projectBullet');
+  var contactBullet = document.getElementById('contactBullet');
   /** The down arrow in the landing section */
   var $landingDownArrow = $('#landingDownArrow');
   var initialsLogo = document.getElementById('initialsLogo');
@@ -260,6 +283,22 @@ window.onload = function () {
         }
   });
 
+  homeBullet.addEventListener('click', function(e) {
+    scrollTo($('#landing'));
+  }, false);
+
+  aboutBullet.addEventListener('click', function(e) {
+    scrollTo($('#aboutSection'));
+  }, false);
+
+  projectBullet.addEventListener('click', function(e) {
+    scrollTo($('#projectsSection'));
+  }, false);
+
+  contactBullet.addEventListener('click', function(e) {
+    scrollTo($('#contactSection'));
+  }, false);
+
   var tl = new TimelineLite({});
 
   tl.to(initialsLogo, .8, {
@@ -296,4 +335,5 @@ window.onload = function () {
   splitText(landingDescription);
   splitText(document.getElementById('landingBottom').children[0]);
   prepareAnimations();
+  activateBullet(homeBullet);
 }

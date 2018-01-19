@@ -4,6 +4,32 @@ block stylesheet
   link(rel='stylesheet', href='/stylesheets/home.css')
 
 block content
+  nav#sideNav
+    ul
+      li
+        .navItemWrapper#homeBullet
+          .bullet
+            .bulletInner
+          .sectionText#homeText Home
+          .textUnderline
+      li
+        .navItemWrapper#aboutBullet
+          .bullet
+            .bulletInner
+          .sectionText#homeText About Me
+          .textUnderline
+      li
+        .navItemWrapper#projectBullet
+          .bullet
+            .bulletInner
+          .sectionText#homeText My Projects
+          .textUnderline
+      li
+        .navItemWrapper#contactBullet
+          .bullet
+            .bulletInner
+          .sectionText#homeText Contact Me
+          .textUnderline
   #landing
     #landingWrapper
       img#initialsLogo(src="/images/logos/initials.png")
