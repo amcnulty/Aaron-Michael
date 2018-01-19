@@ -8,6 +8,9 @@ window.onload = function () {
         fadeIntoView(projects[i]);
       }
     }
+    if ($(this).scrollTop() > $('#contactSection').offset().top - 100) {
+      animateContactSection();
+    }
   });
 
   function fadeIntoView(element) {
@@ -44,6 +47,10 @@ window.onload = function () {
         ease: Power0.ease
       });
     }
+  }
+  
+  function animateContactSection() {
+    TweenLite.to(sideContent, .5, {boxShadow: '15px 15px 40px 0px grey'});
   }
 
   function scrollTo(section) {
@@ -123,11 +130,14 @@ window.onload = function () {
   // About section
   var aboutHeaders = document.getElementsByClassName('casscade');
   var techs = document.getElementsByClassName('techListItem');
+  var contactButton = document.getElementById('contactButton');
   // Projects section
   var projects = document.getElementsByClassName('project');
   // Contact section
   var inputs = document.getElementsByClassName('input-field');
   var textarea = document.getElementById('message');
+  var submitButton = document.getElementById('submitButton');
+  var sideContent = document.getElementById('sideContent');
   for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('blur', function (e) {
       if (e.target.value.trim() === '') {
@@ -144,6 +154,14 @@ window.onload = function () {
   $landingDownArrow.on('click', function (e) {
     scrollTo($('#aboutSection'));
   });
+
+  contactButton.addEventListener('click', function(e) {
+    scrollTo($('#contactSection'));
+  }, false);
+
+  submitButton.addEventListener('click', function(e) {
+    e.preventDefault();
+  }, false);
 
   var tl = new TimelineLite({});
 
