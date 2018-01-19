@@ -67,8 +67,50 @@ body, html {
 
 footer {
   width: 100%;
-  height: 300px;
-  background-color: #0A1612; }
+  padding: 40px;
+  background-color: #010A07;
+  color: #C5C1C0;
+  border-top: 2px solid #F7CE3E;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 15%;
+  box-sizing: border-box; }
+
+footer:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.copyRight {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0px; }
+
+.footerHalf {
+  position: relative;
+  width: 50%;
+  float: left;
+  box-sizing: border-box; }
+
+#footerBorder {
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background-color: #F7CE3E;
+  right: 0px;
+  top: 25%; }
+
+.footerList {
+  font-size: 1.3em;
+  text-align: center; }
+  .footerList ul {
+    list-style-type: none; }
+  .footerList li {
+    margin: 6px; }
+  .footerList a {
+    color: #C5C1C0;
+    text-decoration: none; }
+  .footerList a:hover {
+    color: #F7CE3E; }
 
 input {
   font-size: 100%; }
@@ -108,7 +150,7 @@ input:focus {
   pointer-events: none;
   text-align: left;
   display: inline-block;
-  color: #0A1612;
+  color: #C5C1C0;
   font-size: 70.25%;
   user-select: none;
   box-sizing: border-box; }
@@ -128,7 +170,7 @@ input:focus {
   left: 0;
   width: 100%;
   height: calc(100% - 10px);
-  border-bottom: 1px solid #0A1612; }
+  border-bottom: 1px solid #C5C1C0; }
 
 .input-label::after {
   border-bottom: 4px solid #F7CE3E;
@@ -149,6 +191,7 @@ input:focus {
   padding: 20px;
   font-weight: bold;
   border: 1px solid #0A1612;
+  border-radius: 4px;
   cursor: pointer;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 22, 18, 0)), to(rgba(10, 22, 18, 0.5)));
   background-image: -webkit-linear-gradient(top, rgba(10, 22, 18, 0), rgba(10, 22, 18, 0.5));
@@ -286,6 +329,7 @@ input:focus {
   list-style: none;
   background-color: #0A1612;
   border: 1px solid #C5C1C0;
+  border-radius: 4px;
   box-shadow: 1px 1px 8px 1px #C5C1C0;
   margin: 14px;
   padding: 8px 20px 8px 46px;
@@ -354,6 +398,7 @@ input:focus {
   position: relative;
   width: 320px;
   height: 320px;
+  border-radius: 4px;
   margin: 0 auto;
   box-sizing: border-box; }
 
@@ -365,7 +410,8 @@ input:focus {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 4px; }
 
 .vale {
   text-align: center;
@@ -428,9 +474,9 @@ input:focus {
 #contactSection {
   width: 100%;
   padding: 100px 0px 100px 0px;
-  background-color: #C5C1C0;
-  color: #0A1612;
-  box-shadow: 0px 0px 50px 100px #C5C1C0;
+  background-color: #0A1612;
+  color: #C5C1C0;
+  box-shadow: 0px 0px 50px 100px #0A1612;
   font-size: 1.5em; }
 
 #contactSection:after {
@@ -460,6 +506,7 @@ input:focus {
   padding: 1em;
   box-sizing: border-box;
   border: 4px solid rgba(255, 255, 255, 0);
+  border-radius: 4px;
   background-color: #1A2930;
   color: #C5C1C0; }
 
@@ -480,7 +527,8 @@ aside {
   width: 100%;
   padding: 50px;
   text-align: center;
-  box-shadow: 20px 20px 70px 0px #0A1612;
+  border-radius: 4px;
+  box-shadow: 20px 20px 70px 0px grey;
   box-sizing: border-box; }
 
 #myPhoto {
@@ -493,7 +541,8 @@ aside {
 .contactLink {
   display: block;
   margin: 1em 0em;
-  font-size: .8em; }
+  font-size: .8em;
+  color: lightblue; }
 
 .socialIcon {
   position: relative;
