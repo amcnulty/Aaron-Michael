@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 let mailOptions = {};
 
 const smtpTransport = nodemailer.createTransport({
-  service: 'Gmail',
+  service: 'Yahoo',
   auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS
@@ -19,7 +19,7 @@ const sendMessage = function(data, cb) {
 
 const setMailOptions = function(senderName, senderEmail, message) {
   mailOptions = {
-    from: `${senderName} <aaronmcnulty@gmail.com>`,
+    from: `${senderName} <amcnulty88@swbell.net>`,
     to: `amcnulty88@swbell.net`,
     subject: `New Message From Portfolio Page!`,
     text: message,
