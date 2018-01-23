@@ -423,6 +423,26 @@ aside
   z-index: 1
 
 @media screen and (min-width: 0px) and (max-width: 768px)
+  #landingDescription
+    position: relative
+    left: -50%
+    width: 200%
+    transform: scale(.4)
+
+  .bullet:hover
+    border-color: rgba(0, 0, 0, 0)
+
+  .bulletHover .bulletInner
+    background-color: inherit
+    opacity: .5
+
+  .bullet:hover + .sectionText,
+  .bullet:hover ~ .textUnderline
+    right: 100%
+
+  #aboutSection
+    padding-bottom: 300px
+  
   .aboutInfoBox
     width: 80%
     float: unset
@@ -432,16 +452,35 @@ aside
     width: 100%
     text-align: center
 
-  #aboutSection
-    padding-bottom: 300px
-  
   #contactForm
     width: 100%
+
+  #projectsWrapper
+    width: 70%
+
+  .project
+    width: 90%
+    height: unset
+    padding-top: 90%
+
+  .project:hover
+    animation: unset
+
+  .vale:hover
+    opacity: 0
+
+  #paralaxSection
+    height: 0px
+
+  #contactWrapper
+    width: 100%
+    margin: unset
 
   #submitButton
     position: relative
     width: 50%
     left: 50%
+    margin: 0px 0px 40px 0px
     -webkit-transform: translate(-50%, 0%)
     -moz-transform: translate(-50%, 0%)
     -ms-transform: translate(-50%, 0%)
@@ -454,3 +493,7 @@ aside
     float: unset
     margin: 0 auto
     clear: both
+
+  .footerList
+    ul
+      padding: 0px
