@@ -687,4 +687,32 @@ aside {
   transform: translate(-50%, -50%);
   z-index: 1; }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .aboutInfoBox {
+    width: 80%;
+    float: unset;
+    margin: 0 auto; }
+  #btnSection {
+    width: 100%;
+    text-align: center; }
+  #aboutSection {
+    padding-bottom: 300px; }
+  #contactForm {
+    width: 100%; }
+  #submitButton {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); }
+  aside {
+    width: 80%;
+    padding: 0px;
+    float: unset;
+    margin: 0 auto;
+    clear: both; } }
+
 /*# sourceMappingURL=home.css.map */
