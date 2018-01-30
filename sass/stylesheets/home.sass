@@ -332,6 +332,16 @@ body
 
 #submitButton
   margin: 1em
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 1)), to(rgba(115, 121, 119, 1)))
+  background-image: -webkit-linear-gradient(top, rgba(221, 221, 221, 1), rgba(115, 121, 119, 1))
+  background-image: -moz-linear-gradient(top, rgba(221, 221, 221, 1), rgba(115, 121, 119, 1))
+  background-image: linear-gradient(to bottom, rgba(221, 221, 221, 1), rgba(115, 121, 119, 1))
+
+#submitButton:hover
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(115, 121, 119, 1)), to(rgba(221, 221, 221, 1)))
+  background-image: -webkit-linear-gradient(top, rgba(115, 121, 119, 1), rgba(221, 221, 221, 1))
+  background-image: -moz-linear-gradient(top, rgba(115, 121, 119, 1), rgba(221, 221, 221, 1))
+  background-image: linear-gradient(to bottom, rgba(115, 121, 119, 1), rgba(221, 221, 221, 1))
 
 #errorMessage
   display: inline-block
@@ -423,6 +433,9 @@ aside
   z-index: 1
 
 @media screen and (min-width: 0px) and (max-width: 768px)
+  #sideNav
+    display: none
+
   #landingDescription
     position: relative
     left: -50%
