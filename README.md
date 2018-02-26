@@ -1,2 +1,2 @@
 # Aaron-Michael
-My Personal Portfolio Page
+My personal portfolio page with examples of my work.
