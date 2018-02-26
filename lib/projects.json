@@ -7,6 +7,13 @@
     "poster": "./images/projects/whoopItUp/poster.jpg"
   },
   {
+    "title": "PT Link",
+    "description": "PT link is a parent teacher linking app for parent teacher communication. Teachers are able to post daily lesson plans and homework that the parents can view to keep up with their child's assignments.",
+    "github": "https://github.com/amcnulty/PTLink",
+    "url": "https://pt-link.herokuapp.com/",
+    "poster": "./images/projects/PTLink/poster.jpg"
+  },
+  {
     "title": "Pink Trivia",
     "description": "A trivia game for mobile and desktop web browsers. Test your trivia skills and test your knowledge in several categories. This game generates questions from the Open Trivia Database API.",
     "github": "https://github.com/amcnulty/TriviaGame",
@@ -47,6 +54,13 @@
     "github": "https://github.com/amcnulty/RPS_Multiplayer",
     "url": "https://amcnulty.github.io/RPS_Multiplayer/",
     "poster": "./images/projects/RPSMultiplayer/poster.jpg"
+  },
+  {
+    "title": "DesieDog",
+    "description": "An online bog site for dog owners. This site uses user authentication and is backed with a database for storing important user information on the site. There is also a custom content management system at work for content creation.",
+    "github": "https://github.com/amcnulty/Desiedog-Website",
+    "url": "http://www.desiedog.com/",
+    "poster": "./images/projects/desiedog/poster.jpg"
   },
   {
     "title": "Planetary Real Estate",
