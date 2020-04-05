@@ -14,17 +14,17 @@ const request = require('request');
       console.log('Made request to https://aaronmichael.herokuapp.com/ at: ' + new Date());
     });
   }, 1740000);
-  projects.forEach(project => {
-    if (project.pingOnLoad) {
-      request(project.url, (error, response, body) => {
-        console.log('Made request to ' + project.url + ' at: ' + new Date());
-      });
-    }
-  });
 })();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    projects.forEach(project => {
+      if (project.pingOnLoad) {
+        request(project.url, (error, response, body) => {
+          console.log('Made request to ' + project.url + ' at: ' + new Date());
+        });
+      }
+    });
   res.render('index', { 
     title: 'Aaron Michael | A Personal Website For Aaron Michael McNulty',
     projects: projects
