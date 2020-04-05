@@ -13,7 +13,8 @@ const startDate = new Date();
   setInterval(() => {
     request('https://aaronmichael.herokuapp.com/ping', (error, response, body) => {
       console.log(`Made request to https://aaronmichael.herokuapp.com/ping at: ${new Date()}
-      The Response is: ${response}`);
+      The Response is: ${body}`);
+      console.log(JSON.stringify(response, null, 3));
     });
   }, 10000);
 })();
@@ -46,7 +47,6 @@ router.post('/send-message', function(req, res, next) {
 });
 
 router.get('/ping', (req, res) => {
-  console.log('inside ping route');
   res.status(200).send(`The app has been awake since: ${startDate}`);
 });
 
