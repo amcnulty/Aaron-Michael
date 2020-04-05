@@ -4,69 +4,79 @@
     "description": "Whoop it up is an event organization service where users can create events and invite other users to their events. Events that users are invited to are listed on the user profile page allowing users to easily manage their events.",
     "github": "https://github.com/amcnulty/Whoop-It-Up",
     "url": "https://whoopitup.herokuapp.com/",
-    "poster": "./images/projects/whoopItUp/poster.jpg"
+    "poster": "./images/projects/whoopItUp/poster.jpg",
+    "pingOnLoad": true
   },
   {
     "title": "PT Link",
     "description": "PT link is a parent teacher linking app for parent teacher communication. Teachers are able to post daily lesson plans and homework that the parents can view to keep up with their child's assignments.",
     "github": "https://github.com/amcnulty/PTLink",
     "url": "https://pt-link.herokuapp.com/",
-    "poster": "./images/projects/PTLink/poster.jpg"
+    "poster": "./images/projects/PTLink/poster.jpg",
+    "pingOnLoad": true
   },
   {
     "title": "Pink Trivia",
     "description": "A trivia game for mobile and desktop web browsers. Test your trivia skills and test your knowledge in several categories. This game generates questions from the Open Trivia Database API.",
     "github": "https://github.com/amcnulty/TriviaGame",
     "url": "https://amcnulty.github.io/TriviaGame/",
-    "poster": "./images/projects/pinkTrivia/poster.jpg"
+    "poster": "./images/projects/pinkTrivia/poster.jpg",
+    "pingOnLoad": false
   },
   {
     "title": "Stars & Stripes",
     "description": "A site for Stars and Stripes General Contracting LLC located in Johnson County, Kansas. This is an advertisement site for the company that highlights it's services and work. Their is a contact field for a point of contact for customers.",
     "github": "https://github.com/amcnulty/SSGC",
     "url": "http://amcnulty.github.io/SSGC/",
-    "poster": "./images/projects/SSGC/poster.jpg"
+    "poster": "./images/projects/SSGC/poster.jpg",
+    "pingOnLoad": false
   },
   {
     "title": "NYT Scrubber",
     "description": "A news article viewing tool that pulls articles from the New York Times API. Simply search for articles by topic and date range. This project is built using react and has an Android app version of the project.",
     "github": "https://github.com/amcnulty/New-York-Times-Scrubber",
     "url": "https://new-york-times-scrubber.herokuapp.com/",
-    "poster": "./images/projects/NYTScrubber/poster.jpg"
+    "poster": "./images/projects/NYTScrubber/poster.jpg",
+    "pingOnLoad": true
   },
   {
     "title": "Contractor's Garage",
     "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. The Google Maps API is used to display garage locations.",
     "github": "https://github.com/amcnulty/TCG",
     "url": "http://www.contractorsgarage.net",
-    "poster": "./images/projects/TCG/poster.jpg"
+    "poster": "./images/projects/TCG/poster.jpg",
+    "pingOnLoad": false
   },
   {
     "title": "Mongoose Scraper",
     "description": "A page scraper to display articles from the New York Times. This app utilizes Mongoose ORM to connect with the document datastore. The app is run on an express server and is built in the model view controller framework.",
     "github": "https://github.com/amcnulty/Mongoose-Scraper",
     "url": "https://mongoosescraper.herokuapp.com/",
-    "poster": "./images/projects/mongooseScraper/poster.jpg"
+    "poster": "./images/projects/mongooseScraper/poster.jpg",
+    "pingOnLoad": true
   },
   {
     "title": "RPS Multiplayer",
     "description": "An online game of rock paper scissors lizard Spock for web browsers. This is a two player game formated for desktop and mobile. There is also messaging functionality included in the game. The game uses a Firebase database for storing data.",
     "github": "https://github.com/amcnulty/RPS_Multiplayer",
     "url": "https://amcnulty.github.io/RPS_Multiplayer/",
-    "poster": "./images/projects/RPSMultiplayer/poster.jpg"
+    "poster": "./images/projects/RPSMultiplayer/poster.jpg",
+    "pingOnLoad": false
   },
   {
     "title": "DesieDog",
     "description": "An online bog site for dog owners. This site uses user authentication and is backed with a database for storing important user information on the site. There is also a custom content management system at work for content creation.",
     "github": "https://github.com/amcnulty/Desiedog-Website",
     "url": "http://www.desiedog.com/",
-    "poster": "./images/projects/desiedog/poster.jpg"
+    "poster": "./images/projects/desiedog/poster.jpg",
+    "pingOnLoad": true
   },
   {
     "title": "Planetary Real Estate",
     "description": "This is a concept page for an off-world real estate company. Mobile responsive, very flashy, and a great concept to lure prospective property owners. Off world real estate for sale in our solar system! Come grab a piece of another world!",
     "github": "https://github.com/amcnulty/Planet-Page",
     "url": "http://amcnulty.github.io/Planet-Page/",
-    "poster": "./images/projects/planetaryRealEstate/poster.jpg"
+    "poster": "./images/projects/planetaryRealEstate/poster.jpg",
+    "pingOnLoad": false
   }
 ]
