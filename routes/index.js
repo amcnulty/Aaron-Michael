@@ -7,19 +7,20 @@ const request = require('request');
 const startDate = new Date();
 /**
  * Set interval of 29 minutes to keep this Heroku Dyno active.
- * On page load ping all of the Heroku hosted sites in projects.json.
  */
 (() => {
   setInterval(() => {
     request('https://aaronmichael.herokuapp.com/ping', (error, response, body) => {
       console.log(`Made request to https://aaronmichael.herokuapp.com/ping at: ${new Date()}
       The Response is: ${body}`);
-      console.log(JSON.stringify(response, null, 3));
     });
-  }, 10000);
+  }, 1740000);
 })();
 
-/* GET home page. */
+/**
+ * Get home page. 
+ * On page load ping all of the Heroku hosted sites in projects.json.
+ */
 router.get('/', function(req, res, next) {
     projects.forEach(project => {
       if (project.pingOnLoad) {
@@ -34,6 +35,9 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/**
+ * Route for sending email from contact me form.
+ */
 router.post('/send-message', function(req, res, next) {
   nodemailerHelper.sendMessage(req.body, function(err, emailResponse) {
     if (err) {
@@ -46,6 +50,9 @@ router.post('/send-message', function(req, res, next) {
   });
 });
 
+/**
+ * Endpoint used to ping the server to keep the app awake.
+ */
 router.get('/ping', (req, res) => {
   res.status(200).send(`The app has been awake since: ${startDate}`);
 });
