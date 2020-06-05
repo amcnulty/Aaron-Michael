@@ -4,6 +4,6 @@
 	"sources": [
 		"../../sass/stylesheets/error.sass"
 	],
-	"mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAI,GAAG",
-	"names": []
+	"names": [],
+	"mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG,GAAG"
 }
