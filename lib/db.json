@@ -193,13 +193,6 @@
       "text": "I caught a world-record-breaking trout here on my last visit.",
       "author": "McKenzie Sebastian",
       "date": "2019-02-18T18:12Z"
-    },
-    {
-      "campsiteId": 0,
-      "author": "duder",
-      "text": "bad place",
-      "date": "2020-04-09T00:51:16.094Z",
-      "id": 20
     }
   ],
   "partners": [
@@ -241,97 +234,5 @@
       "description": "Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided."
     }
   ],
-  "feedback": [
-    {
-      "id": 0,
-      "firstname": "Test",
-      "lastname": "Test",
-      "telnum": "12345",
-      "email": "test@test.com",
-      "agree": true,
-      "contactType": "Email",
-      "message": "test",
-      "date": "2019-10-25T13:30Z"
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "terry",
-      "id": 1
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "terry",
-      "id": 2
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "tien",
-      "id": 3
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "matt",
-      "id": 4
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "Ethan",
-      "id": 5
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "ana",
-      "id": 6
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "jack",
-      "id": 7
-    },
-    {
-      "firstName": "Aaron",
-      "lastName": "McNulty",
-      "phoneNum": "9132195521",
-      "email": "amcnulty88@swbell.net",
-      "agree": false,
-      "contactType": "Phone",
-      "feedback": "brandon",
-      "id": 8
-    }
-  ]
+  "feedback": []
 }
