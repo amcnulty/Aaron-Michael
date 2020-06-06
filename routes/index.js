@@ -5,10 +5,7 @@ const nodemailerHelper = require('../nodemailer/nodemailerHelper');
 const request = require('request');
 const fs = require('fs');
 
-const dbOriginal = require('../lib/db-original.json');
-
 const startDate = new Date();
-let lastResetDate = new Date();
 /**
  * Set interval of 29 minutes to keep this Heroku Dyno active.
  */
@@ -18,16 +15,6 @@ let lastResetDate = new Date();
       console.log(`Made request to https://aaronmichael.herokuapp.com/ping at: ${new Date()}
       The Response is: ${body}`);
     });
-    if ((new Date()).getDay() !== lastResetDate.getDay()) {
-      // reset the db.json file
-      lastResetDate = new Date();
-      fs.writeFile('lib/db.json', JSON.stringify(dbOriginal, null, 2), (err) => {
-        if (err) {
-          console.log(err);
-        }
-        console.log('reseting db.json at: ' + lastResetDate);
-      });
-    }
   }, 1740000);
 })();
 

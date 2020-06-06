@@ -1,8 +1,40 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-
-const data = require('../lib/db.json');
+// The original db file used for reseting the active one that is being used for requests.
+const dbOriginal = require('../lib/db-original.json');
+// Used as the db.json file used for requests.
+let data;
+// Last date the db.json file was reset.
+let lastResetDate = new Date();
+// 29 minute interval to check if it is a new day to reset the db.json file.
+(() => {
+    setInterval(() => {
+        if ((new Date()).getDay() !== lastResetDate.getDay()) {
+          // reset the db.json file
+          lastResetDate = new Date();
+          fs.writeFile('lib/db.json', JSON.stringify(dbOriginal, null, 2), (err) => {
+            if (err) {
+              console.log(err);
+            }
+            console.log('reseting db.json at: ' + lastResetDate);
+            setDbFile();
+          });
+        }
+    }, 1740000);
+})();
+// Reads the db.json file and loads it into the data variable.
+const setDbFile = () => {
+    fs.readFile('lib/db.json', (err, file) => {
+        if (err) {
+            console.log('error reading db.json file while attempting to reset it.');
+            console.log(err);
+        }
+        data = JSON.parse(file);
+    });
+}
+// Initial call to load the contents of the db.json file into the data variable.
+setDbFile();
 
 router.get('/campsites', (req, res) => {
     res.statusCode = 200;
