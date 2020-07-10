@@ -9,14 +9,14 @@ const startDate = new Date();
 /**
  * Set interval of 29 minutes to keep this Heroku Dyno active.
  */
-(() => {
-  setInterval(() => {
-    request('https://aaronmichael.herokuapp.com/ping', (error, response, body) => {
-      console.log(`Made request to https://aaronmichael.herokuapp.com/ping at: ${new Date()}
-      The Response is: ${body}`);
-    });
-  }, 1740000);
-})();
+// (() => {
+//   setInterval(() => {
+//     request('https://aaronmichael.herokuapp.com/ping', (error, response, body) => {
+//       console.log(`Made request to https://aaronmichael.herokuapp.com/ping at: ${new Date()}
+//       The Response is: ${body}`);
+//     });
+//   }, 1740000);
+// })();
 
 /**
  * Get home page. 
