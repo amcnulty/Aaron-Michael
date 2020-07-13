@@ -94,7 +94,7 @@ router.post('/comments', (req, res) => {
                     console.log('Writing to db.json comments array.');
                 }
             })
-            res.end(missingFieldsMessage);
+            res.end(JSON.stringify(req.body));
         }
         else {
             res.statusCode = 200;
@@ -108,7 +108,7 @@ router.post('/comments', (req, res) => {
                     console.log('Writing to db.json comments array.');
                 }
             })
-            res.end('Comment successfully added.');
+            res.end(JSON.stringify(req.body));
         }
     }
     else {
@@ -159,7 +159,7 @@ router.post('/feedback', (req, res) => {
                     console.log('Writing to db.json feedback array.');
                 }
             })
-            res.end(missingFieldsMessage);
+            res.end(JSON.stringify(req.body));
         }
         else {
             res.statusCode = 200;
@@ -173,7 +173,7 @@ router.post('/feedback', (req, res) => {
                     console.log('Writing to db.json feedback array.');
                 }
             })
-            res.end('Feedback successfully added.');
+            res.end(JSON.stringify(req.body));
         }
     }
     else {
