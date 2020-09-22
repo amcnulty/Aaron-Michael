@@ -10,6 +10,7 @@ var cors = require('cors');
 
 var index = require('./routes/index');
 var nucampData = require('./routes/nucampData');
+var upload = require('./routes/upload');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/resume', upload);
 app.use('/nucamp-data', cors(), nucampData);
 
 // catch 404 and forward to error handler

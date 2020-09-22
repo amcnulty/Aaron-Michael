@@ -1,0 +1,35 @@
+extends layout
+
+block stylesheet
+  link(rel='stylesheet', href='/stylesheets/upload.css')
+
+block content
+    #uploadPage
+        a(href='/')
+            img#initialsLogo(src="/images/logos/initials.png")
+        h3 Upload Resume
+        p Use this page to upload a PDF file to replace your current resume.
+        #formContainer
+            form(
+                id="myForm"
+                action="/resume"
+                method="post"
+                enctype="multipart/form-data"
+            )
+                label#uploadLabel.button(for="fileUploadInput") Choose File
+                input(
+                    id="fileUploadInput"
+                    type="file"
+                    name="resume"
+                    accept=".pdf"
+                )
+                input(
+                    
+                    class="button"
+                    type="submit"
+                )
+        p#successMessage Resume Upload Successful
+        #errorMessage
+            p Resume Upload Failed!
+            p#errorDescription
+    script(src="../javascripts/upload.js" type="text/javascript")

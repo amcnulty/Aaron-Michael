@@ -1,0 +1,43 @@
+@import ../partials/colors
+@import ../partials/reset
+@import ../partials/inputs
+@import ../partials/buttons
+
+body
+    text-align: center
+    background-color: $steel
+    color: $screen
+
+#uploadPage
+    padding: 80px 8px
+
+    #initialsLogo
+        width: 90px
+
+    #myForm
+        display: flex
+        flex-direction: column
+        input
+            margin: 10px auto
+
+        #fileUploadInput::-webkit-file-upload-button, 
+        #fileUploadInput
+            visibility: hidden
+            height: 0px
+
+        #uploadLabel
+            display: block
+            margin: auto
+            background-color: $marigold
+            color: $steel
+
+    #successMessage
+        display: none
+        font-weight: bold
+        color: green
+
+    #errorMessage
+        display: none
+        font-weight: bold
+        color: red
+    
