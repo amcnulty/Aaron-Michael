@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 const upload = multer({ storage: multer.diskStorage({
     destination: (req, file, callback) => {
-        callback(null, 'public/resume');
+        callback(null, '../public/resume');
     },
     filename: (req, file, callback) => {
         callback(null, 'aaron_mcnulty_resume.pdf');
@@ -23,7 +23,6 @@ const auth = function(req, res, next) {
     const auth = Buffer.from(authHeader.split(' ')[1], 'base64').toString().split(':');
     const user = auth[0];
     const pass = auth[1];
-    console.log(process.env);
     if (user === process.env.USER && pass === process.env.PASSWORD) {
       return next(); // authorized
     }
@@ -42,7 +41,6 @@ router.get('/', auth,  (req, res, next) => {
 });
 
 router.post('/', auth, (req, res, next) => {
-    console.log('inside post of resume');
     upload.single('resume')(req, res, (err) => {
         if (err instanceof multer.MulterError) {
             console.log('multer error', err);
