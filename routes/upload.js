@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 const upload = multer({ storage: multer.diskStorage({
     destination: (req, file, callback) => {
-        callback(null, 'https://aaronmichael.herokuapp.com/resume');
+        callback(null, 'public/resume');
     },
     filename: (req, file, callback) => {
         callback(null, 'aaron_mcnulty_resume.pdf');
