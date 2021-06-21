@@ -41,9 +41,9 @@
   },
   {
     "title": "Contractor's Garage",
-    "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. The Google Maps API is used to display garage locations.",
+    "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. React Leaflet maps is used to display garage locations.",
     "github": "https://github.com/amcnulty/TCG",
-    "url": "http://www.contractorsgarage.net",
+    "url": "http://www.contractorsgarage.com",
     "poster": "./images/projects/TCG/poster.jpg",
     "pingOnLoad": false
   },
