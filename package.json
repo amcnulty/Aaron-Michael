@@ -18,5 +18,8 @@
     "nodemailer": "^4.4.1",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5"
+  },
+  "engines": {
+    "node": "14.15.0"
   }
 }
