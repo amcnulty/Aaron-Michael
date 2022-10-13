@@ -279,7 +279,11 @@ window.onload = function () {
           }).done(function() {
             clearForm();
             showSuccessMessage();
-          }, false);
+          }, false)
+          .fail(function() {
+            clearForm();
+            showErrorMessage('Unable to send, please send message to amcnulty88@swbell.net')
+          })
         }
   });
 

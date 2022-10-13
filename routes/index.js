@@ -43,8 +43,9 @@ router.get('/', function(req, res, next) {
 router.post('/send-message', function(req, res, next) {
   nodemailerHelper.sendMessage(req.body, function(err, emailResponse) {
     if (err) {
-      throw err;
-      return res.status(500).end();
+      // throw err;
+      next(err);
+      // return res.status(500).end();
     }
     else {
       return res.status(200).end();
