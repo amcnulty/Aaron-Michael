@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "install": "npm ci --dry-run=false --ignore-scripts=true"
+    "install": "npm ci --dry-run=false --ignore-scripts=true",
+    "postinstall": "npm rebuild node-sass"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
