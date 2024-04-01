@@ -1,18 +1,26 @@
 [
   {
-    "title": "Whoop It Up",
-    "description": "Whoop it up is an event organization service where users can create events and invite other users to their events. Events that users are invited to are listed on the user profile page allowing users to easily manage their events.",
-    "github": "https://github.com/amcnulty/Whoop-It-Up",
-    "url": "https://whoopitup.herokuapp.com/",
-    "poster": "./images/projects/whoopItUp/poster.jpg",
+    "title": "Contractor's Garage",
+    "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. React Leaflet maps is used to display garage locations.",
+    "github": "https://github.com/amcnulty/TCG",
+    "url": "http://www.contractorsgarage.com",
+    "poster": "./images/projects/TCG/poster.jpg",
     "pingOnLoad": false
   },
   {
-    "title": "PT Link",
-    "description": "PT link is a parent teacher linking app for parent teacher communication. Teachers are able to post daily lesson plans and homework that the parents can view to keep up with their child's assignments.",
-    "github": "https://github.com/amcnulty/PTLink",
-    "url": "https://pt-link.herokuapp.com/",
-    "poster": "./images/projects/PTLink/poster.jpg",
+    "title": "Smart Context Hooks",
+    "description": "A React hooks library to enhance the efficiency of React Context by minimizing unnecessary re-renders caused by state changes. It's designed to be lightweight and non-intrusive, working seamlessly with your existing React Context setup.",
+    "github": "https://github.com/amcnulty/SmartContext",
+    "url": "https://www.npmjs.com/package/smart-context-hooks",
+    "poster": "./images/projects/smartContextHooks/poster.jpg",
+    "pingOnLoad": false
+  },
+  {
+    "title": "RPS Multiplayer",
+    "description": "An online game of rock paper scissors lizard Spock for web browsers. This is a two player game formated for desktop and mobile. There is also messaging functionality included in the game. The game uses a Firebase database for storing data.",
+    "github": "https://github.com/amcnulty/RPS_Multiplayer",
+    "url": "https://amcnulty.github.io/RPS_Multiplayer/",
+    "poster": "./images/projects/RPSMultiplayer/poster.jpg",
     "pingOnLoad": false
   },
   {
@@ -32,35 +40,27 @@
     "pingOnLoad": false
   },
   {
-    "title": "NYT Scrubber",
-    "description": "A news article viewing tool that pulls articles from the New York Times API. Simply search for articles by topic and date range. This project is built using react and has an Android app version of the project.",
-    "github": "https://github.com/amcnulty/New-York-Times-Scrubber",
-    "url": "https://new-york-times-scrubber.herokuapp.com/",
-    "poster": "./images/projects/NYTScrubber/poster.jpg",
+    "title": "Planetary Real Estate",
+    "description": "This is a concept page for an off-world real estate company. Mobile responsive, very flashy, and a great concept to lure prospective property owners. Off world real estate for sale in our solar system! Come grab a piece of another world!",
+    "github": "https://github.com/amcnulty/Planet-Page",
+    "url": "http://amcnulty.github.io/Planet-Page/",
+    "poster": "./images/projects/planetaryRealEstate/poster.jpg",
     "pingOnLoad": false
   },
   {
-    "title": "Contractor's Garage",
-    "description": "A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. React Leaflet maps is used to display garage locations.",
-    "github": "https://github.com/amcnulty/TCG",
-    "url": "http://www.contractorsgarage.com",
-    "poster": "./images/projects/TCG/poster.jpg",
+    "title": "Whoop It Up",
+    "description": "Whoop it up is an event organization service where users can create events and invite other users to their events. Events that users are invited to are listed on the user profile page allowing users to easily manage their events.",
+    "github": "https://github.com/amcnulty/Whoop-It-Up",
+    "url": "https://whoopitup.herokuapp.com/",
+    "poster": "./images/projects/whoopItUp/poster.jpg",
     "pingOnLoad": false
   },
   {
-    "title": "Mongoose Scraper",
-    "description": "A page scraper to display articles from the New York Times. This app utilizes Mongoose ORM to connect with the document datastore. The app is run on an express server and is built in the model view controller framework.",
-    "github": "https://github.com/amcnulty/Mongoose-Scraper",
-    "url": "https://mongoosescraper.herokuapp.com/",
-    "poster": "./images/projects/mongooseScraper/poster.jpg",
-    "pingOnLoad": false
-  },
-  {
-    "title": "RPS Multiplayer",
-    "description": "An online game of rock paper scissors lizard Spock for web browsers. This is a two player game formated for desktop and mobile. There is also messaging functionality included in the game. The game uses a Firebase database for storing data.",
-    "github": "https://github.com/amcnulty/RPS_Multiplayer",
-    "url": "https://amcnulty.github.io/RPS_Multiplayer/",
-    "poster": "./images/projects/RPSMultiplayer/poster.jpg",
+    "title": "PT Link",
+    "description": "PT link is a parent teacher linking app for parent teacher communication. Teachers are able to post daily lesson plans and homework that the parents can view to keep up with their child's assignments.",
+    "github": "https://github.com/amcnulty/PTLink",
+    "url": "https://pt-link.herokuapp.com/",
+    "poster": "./images/projects/PTLink/poster.jpg",
     "pingOnLoad": false
   },
   {
@@ -72,11 +72,11 @@
     "pingOnLoad": false
   },
   {
-    "title": "Planetary Real Estate",
-    "description": "This is a concept page for an off-world real estate company. Mobile responsive, very flashy, and a great concept to lure prospective property owners. Off world real estate for sale in our solar system! Come grab a piece of another world!",
-    "github": "https://github.com/amcnulty/Planet-Page",
-    "url": "http://amcnulty.github.io/Planet-Page/",
-    "poster": "./images/projects/planetaryRealEstate/poster.jpg",
+    "title": "NYT Scrubber",
+    "description": "A news article viewing tool that pulls articles from the New York Times API. Simply search for articles by topic and date range. This project is built using react and has an Android app version of the project.",
+    "github": "https://github.com/amcnulty/New-York-Times-Scrubber",
+    "url": "https://new-york-times-scrubber.herokuapp.com/",
+    "poster": "./images/projects/NYTScrubber/poster.jpg",
     "pingOnLoad": false
   }
 ]
