@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aaron Michael | A Personal Website For Aaron Michael McNulty</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="author" content="Aaron Michael McNulty">
+        <meta name="description" content="A professional portfolio page for Aaron Michael McNulty.">
+        <meta property="og:title" content="Aaron Michael | A Personal Website For Aaron Michael McNulty">
+        <meta property="og:description" content="A professional portfolio page for Aaron Michael McNulty.">
+        <meta property="og:image" content="images/logos/initials.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendor/greensock/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/home.css">
+    </head>
+    <body>
+        <nav id="sideNav">
+            <ul>
+                <li>
+                    <div class="navItemWrapper" id="homeBullet">
+                        <div class="bullet">
+                            <div class="bulletInner"></div>
+                        </div>
+                        <div class="sectionText" id="homeText">Home</div>
+                        <div class="textUnderline"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItemWrapper" id="aboutBullet">
+                        <div class="bullet">
+                            <div class="bulletInner"></div>
+                        </div>
+                        <div class="sectionText" id="homeText">About Me</div>
+                        <div class="textUnderline"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItemWrapper" id="projectBullet">
+                        <div class="bullet">
+                            <div class="bulletInner"></div>
+                        </div>
+                        <div class="sectionText" id="homeText">My Projects</div>
+                        <div class="textUnderline"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItemWrapper" id="contactBullet">
+                        <div class="bullet">
+                            <div class="bulletInner"></div>
+                        </div>
+                        <div class="sectionText" id="homeText">Contact Me</div>
+                        <div class="textUnderline"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="landing">
+            <div id="landingWrapper">
+                <img id="initialsLogo" src="images/logos/initials.png">
+                <div id="centerWrapper">
+                    <h1 id="landingTitle">
+                        Hi, I'm <span id="name">Aaron Michael</span>
+                    </h1>
+                    <h2 id="landingDescription">I'm a web developer living in the Dallas Fort Worth area</h2>
+                    <div id="landingBottom">
+                        <p>Learn more about me</p>
+                        <div class="downArrow" id="landingDownArrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutSection">
+            <div class="headingWrapper">
+                <h1 class="headingTitle">About Me</h1>
+                <p class="headingText">These are the technologies that I work with every day.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="aboutInfoBox" id="techs">
+                <div class="infoBoxHeader casscade">
+                    <h3>Technologies</h3>
+                    <ul class="list">
+                        <li class="techListItem">
+                            Javascript<img class="techIcon" src="images/logos/techIcons/javascript.png">
+                        </li>
+                        <li class="techListItem">
+                            Java<img class="techIcon" src="images/logos/techIcons/java.png">
+                        </li>
+                        <li class="techListItem">
+                            ReactJS<img class="techIcon" src="images/logos/techIcons/reactjs.png">
+                        </li>
+                        <li class="techListItem">
+                            Redux<img class="techIcon" src="images/logos/techIcons/redux.png">
+                        </li>
+                        <li class="techListItem">
+                            Angular<img class="techIcon" src="images/logos/techIcons/angular.png">
+                        </li>
+                        <li class="techListItem">
+                            NodeJS<img class="techIcon" src="images/logos/techIcons/nodejs.png">
+                        </li>
+                        <li class="techListItem">
+                            MongoDB<img class="techIcon" src="images/logos/techIcons/mongodb.png">
+                        </li>
+                        <li class="techListItem">
+                            Salesforce<img class="techIcon" src="images/logos/techIcons/salesforce.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutInfoBox" id="description">
+                <div class="infoBoxHeader casscade">
+                    <h3>What I Do</h3>
+                    <ul class="list">
+                        <li>Web Development</li>
+                        <li>Software Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Bootcamp Instructor</li>
+                        <li>Software Testing</li>
+                        <li>Web Apps</li>
+                        <li>Software Servers</li>
+                        <li>Custom APIs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutInfoBox" id="training">
+                <div class="infoBoxHeader casscade">
+                    <h3>Experience</h3>
+                </div>
+                <p class="casscade">
+                    I am a <strong>business savvy, highly-motivated,</strong>
+                    full stack developer. I utilize my talents in <strong>web development and object oriented programming</strong>
+                    to solve complex, real-world problems with a team of high performing developers.
+                </p>
+                <p class="casscade">
+                    I am a certified <strong>full-stack</strong>
+                    developer for the web who attended <strong class="addUnderline">UCSD Extension</strong>
+                    in San Diego.
+                </p>
+            </div>
+            <div id="btnSection">
+                <a href="https://drive.google.com/file/d/1ietTD44UXzuG6nQYrSB4AcCMhZlFW1Zi/view" target="_blank">
+                    <div class="button" id="resumeButton">My Resume</div>
+                </a>
+                <div class="button" id="contactButton">Contact Me</div>
+            </div>
+        </div>
+        <div id="projectsSection">
+            <div id="projectsWrapper">
+                <div class="headingWrapper">
+                    <h1 class="headingTitle">
+                        My <span class="marigold">Projects</span>
+                    </h1>
+                    <p class="headingText">Browse my work and have fun expoloring the various web apps I have created.</p>
+                    <div class="underline"></div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/TCG/poster.jpg" alt="Contractor's Garage">
+                        <div class="vale child">
+                            <a class="child inactive" href="http://www.contractorsgarage.com" target="_blank"></a>
+                            <h3>Contractor's Garage</h3>
+                            <p>A website for The Contractor's Garage industrial storage company located in Johnson County, Kansas. This is an advertisement site for the company that highlights their products and prices. React Leaflet maps is used to display garage locations.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/TCG" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="http://www.contractorsgarage.com" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/smartContextHooks/poster.jpg" alt="Smart Context Hooks">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://www.npmjs.com/package/smart-context-hooks" target="_blank"></a>
+                            <h3>Smart Context Hooks</h3>
+                            <p>A React hooks library to enhance the efficiency of React Context by minimizing unnecessary re-renders caused by state changes. It's designed to be lightweight and non-intrusive, working seamlessly with your existing React Context setup.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/SmartContext" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://www.npmjs.com/package/smart-context-hooks" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/RPSMultiplayer/poster.jpg" alt="RPS Multiplayer">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://amcnulty.github.io/RPS_Multiplayer/" target="_blank"></a>
+                            <h3>RPS Multiplayer</h3>
+                            <p>An online game of rock paper scissors lizard Spock for web browsers. This is a two player game formated for desktop and mobile. There is also messaging functionality included in the game. The game uses a Firebase database for storing data.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/RPS_Multiplayer" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://amcnulty.github.io/RPS_Multiplayer/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/pinkTrivia/poster.jpg" alt="Pink Trivia">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://amcnulty.github.io/TriviaGame/" target="_blank"></a>
+                            <h3>Pink Trivia</h3>
+                            <p>A trivia game for mobile and desktop web browsers. Test your trivia skills and test your knowledge in several categories. This game generates questions from the Open Trivia Database API.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/TriviaGame" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://amcnulty.github.io/TriviaGame/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/SSGC/poster.jpg" alt="Stars &amp; Stripes">
+                        <div class="vale child">
+                            <a class="child inactive" href="http://amcnulty.github.io/SSGC/" target="_blank"></a>
+                            <h3>Stars &amp;Stripes</h3>
+                            <p>A site for Stars and Stripes General Contracting LLC located in Johnson County, Kansas. This is an advertisement site for the company that highlights it's services and work. Their is a contact field for a point of contact for customers.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/SSGC" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="http://amcnulty.github.io/SSGC/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/planetaryRealEstate/poster.jpg" alt="Planetary Real Estate">
+                        <div class="vale child">
+                            <a class="child inactive" href="http://amcnulty.github.io/Planet-Page/" target="_blank"></a>
+                            <h3>Planetary Real Estate</h3>
+                            <p>This is a concept page for an off-world real estate company. Mobile responsive, very flashy, and a great concept to lure prospective property owners. Off world real estate for sale in our solar system! Come grab a piece of another world!</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/Planet-Page" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="http://amcnulty.github.io/Planet-Page/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/whoopItUp/poster.jpg" alt="Whoop It Up">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://whoopitup.herokuapp.com/" target="_blank"></a>
+                            <h3>Whoop It Up</h3>
+                            <p>Whoop it up is an event organization service where users can create events and invite other users to their events. Events that users are invited to are listed on the user profile page allowing users to easily manage their events.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/Whoop-It-Up" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://whoopitup.herokuapp.com/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/PTLink/poster.jpg" alt="PT Link">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://pt-link.herokuapp.com/" target="_blank"></a>
+                            <h3>PT Link</h3>
+                            <p>PT link is a parent teacher linking app for parent teacher communication. Teachers are able to post daily lesson plans and homework that the parents can view to keep up with their child's assignments.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/PTLink" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://pt-link.herokuapp.com/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/desiedog/poster.jpg" alt="DesieDog">
+                        <div class="vale child">
+                            <a class="child inactive" href="http://www.desiedog.com/" target="_blank"></a>
+                            <h3>DesieDog</h3>
+                            <p>An online bog site for dog owners. This site uses user authentication and is backed with a database for storing important user information on the site. There is also a custom content management system at work for content creation.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/Desiedog-Website" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="http://www.desiedog.com/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectWrapper">
+                    <div class="project">
+                        <img class="child" src="./images/projects/NYTScrubber/poster.jpg" alt="NYT Scrubber">
+                        <div class="vale child">
+                            <a class="child inactive" href="https://new-york-times-scrubber.herokuapp.com/" target="_blank"></a>
+                            <h3>NYT Scrubber</h3>
+                            <p>A news article viewing tool that pulls articles from the New York Times API. Simply search for articles by topic and date range. This project is built using react and has an Android app version of the project.</p>
+                            <a class="codeButton projectButton inactive" href="https://github.com/amcnulty/New-York-Times-Scrubber" target="_blank">
+                                GitHub<img src="./images/logos/techIcons/github.png" alt="github">
+                            </a>
+                            <a class="linkButton projectButton inactive" href="https://new-york-times-scrubber.herokuapp.com/" target="_blank">
+                                Visit<div class="rightArrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="paralaxSection"></div>
+        <div id="contactSection">
+            <div id="contactWrapper">
+                <div class="headingWrapper">
+                    <h1 class="headingTitle">Contact Me</h1>
+                    <p class="headingText">I would like to hear from you! Complete the form below to get ahold of me.</p>
+                    <div class="underline"></div>
+                </div>
+                <form id="contactForm">
+                    <span class="input">
+                        <input class="input-field" id="nameInput" type="text">
+                        <label class="input-label" for="nameInput">
+                            <span class="input-label-content">Name</span>
+                        </label>
+                    </span>
+                    <span class="input">
+                        <input class="input-field" id="emailInput" type="email">
+                        <label class="input-label" for="emailInput">
+                            <span class="input-label-content">Email</span>
+                        </label>
+                    </span>
+                    <div id="messageWrapper">
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                    </div>
+                    <input class="button" id="submitButton" type="submit" value="Send">
+                    <p id="errorMessage"></p>
+                </form>
+                <aside>
+                    <div id="sideContent">
+                        <img id="myPhoto" src="images/me/me.jpg" alt="Aaron Michael">
+                        <div class="underline"></div>
+                        <a class="contactLink" href="tel:9132195521">913-219-5521 </a>
+                        <a class="contactLink" href="mailto:amcnulty88@swbell.net">amcnulty88@swbell.net</a>
+                        <a class="socialIcon" id="githubIcon" href="https://github.com/amcnulty" target="_blank">
+                            <div class="redIcon"></div>
+                            <div class="blackIcon"></div>
+                        </a>
+                        <a class="socialIcon" id="linkedinIcon" href="https://www.linkedin.com/in/aaron-mcnulty/" target="_blank">
+                            <div class="redIcon"></div>
+                            <div class="blackIcon"></div>
+                        </a>
+                        <a class="socialIcon" id="stackOverflowIcon" href="https://stackoverflow.com/users/8456358/amcnulty88?tab=profile" target="_blank">
+                            <div class="redIcon"></div>
+                            <div class="blackIcon"></div>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div id="successMessage">
+            <h2>Message Sent!</h2>
+        </div>
+        <footer>
+            <div class="copyRight">&copy;Aaron Michael McNulty 2024</div>
+            <div class="footerHalf" id="leftFooter">
+                <div id="footerBorder"></div>
+                <nav class="footerList">
+                    <ul>
+                        <li>
+                            <a href="#landing">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#projectsSection">My Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contactSection">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerHalf" id="rightFooter">
+                <div class="footerList">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/amcnulty" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aaron-mcnulty/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/8456358/amcnulty88?tab=profile" target="_blank">StackOverflow</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1ietTD44UXzuG6nQYrSB4AcCMhZlFW1Zi/view" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="javascripts/home.js" type="text/javascript"></script>
+    </body>
+</html>
