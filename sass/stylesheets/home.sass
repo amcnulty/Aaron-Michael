@@ -120,9 +120,11 @@ body
 
 #aboutFlexContainer
   display: flex
+  flex-wrap: wrap
+  justify-content: center
 
 .aboutInfoBox
-  flex-basis: 33%
+  flex-basis: 50%
 
 .infoBoxHeader
   width: 300px
@@ -454,14 +456,6 @@ aside
   .bullet:hover + .sectionText,
   .bullet:hover ~ .textUnderline
     right: 100%
-
-  #aboutSection
-    padding-bottom: 300px
-  
-  .aboutInfoBox
-    width: 80%
-    float: unset
-    margin: 0 auto
 
   #btnSection
     width: 100%
