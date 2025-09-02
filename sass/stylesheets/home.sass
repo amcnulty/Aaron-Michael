@@ -118,9 +118,11 @@ body
   strong
     color: whitesmoke
 
+#aboutFlexContainer
+  display: flex
+
 .aboutInfoBox
-  width: 33%
-  float: left
+  flex-basis: 33%
 
 .infoBoxHeader
   width: 300px
@@ -157,9 +159,7 @@ body
     padding-right: 20px
 
 #btnSection
-  @extend .centerHorizontal
-  position: absolute
-  bottom: 100px
+  text-align: center
   a
     text-decoration: none
 

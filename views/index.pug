@@ -38,57 +38,62 @@ block content
           | Hi, I'm 
           span#name Aaron Michael
         h2#landingDescription
-          | I'm a web developer living in the Dallas Fort Worth area
+          | I'm a web developer living in the Las Vegas area
         #landingBottom
           p Learn more about me
           #landingDownArrow.downArrow
   #aboutSection
     .headingWrapper
       h1.headingTitle About Me
-      p.headingText These are the technologies that I work with every day.
+      p.headingText These are the technologies that make up my core technical skills.
       .underline
-    #techs.aboutInfoBox
-      .infoBoxHeader.casscade
-        h3 Technologies
-        ul.list
-          li.techListItem Javascript
-            img.techIcon(src="images/logos/techIcons/javascript.png")
-          li.techListItem Java
-            img.techIcon(src="images/logos/techIcons/java.png")
-          li.techListItem ReactJS
-            img.techIcon(src="images/logos/techIcons/reactjs.png")
-          li.techListItem Redux
-            img.techIcon(src="images/logos/techIcons/redux.png")
-          li.techListItem Angular
-            img.techIcon(src="images/logos/techIcons/angular.png")
-          li.techListItem NodeJS
-            img.techIcon(src="images/logos/techIcons/nodejs.png")
-          li.techListItem MongoDB
-            img.techIcon(src="images/logos/techIcons/mongodb.png")
-          li.techListItem Salesforce
-            img.techIcon(src="images/logos/techIcons/salesforce.png")
-    #description.aboutInfoBox
-      .infoBoxHeader.casscade
-        h3 What I Do
-        ul.list
-          li Web Development
-          li Software Development
-          li Mobile App Development
-          li Bootcamp Instructor
-          li Software Testing
-          li Web Apps
-          li Software Servers
-          li Custom APIs
-    #training.aboutInfoBox
-      .infoBoxHeader.casscade
-        h3 Experience
-      p.casscade
-        | I am a <strong>business savvy, highly-motivated,</strong> full stack developer. I utilize my talents in <strong>web development and object oriented programming</strong> to solve complex, real-world problems with a team of high performing developers.
-      p.casscade
-        | I am a certified <strong>full-stack</strong> developer for the web who attended <strong class="addUnderline">UCSD Extension</strong> in San Diego.
+    #aboutFlexContainer
+      #techs.aboutInfoBox
+        .infoBoxHeader.casscade
+          h3 Technologies
+          ul.list
+            li.techListItem ReactJS
+              img.techIcon(src="images/logos/techIcons/reactjs.png")
+            li.techListItem Redux
+              img.techIcon(src="images/logos/techIcons/redux.png")
+            li.techListItem Next.js
+              img.techIcon(src="images/logos/techIcons/nextjs.png")
+            li.techListItem TypeScript
+              img.techIcon(src="images/logos/techIcons/typescript.png")
+            li.techListItem JavaScript
+              img.techIcon(src="images/logos/techIcons/javascript.png")
+            li.techListItem Java
+              img.techIcon(src="images/logos/techIcons/java.png")
+            li.techListItem NodeJS
+              img.techIcon(src="images/logos/techIcons/nodejs.png")
+            li.techListItem MongoDB
+              img.techIcon(src="images/logos/techIcons/mongodb.png")
+            li.techListItem Angular
+              img.techIcon(src="images/logos/techIcons/angular.png")
+            li.techListItem Salesforce
+              img.techIcon(src="images/logos/techIcons/salesforce.png")
+      #description.aboutInfoBox
+        .infoBoxHeader.casscade
+          h3 What I Do
+          ul.list
+            li Web Development
+            li Software Development
+            li Mobile App Development
+            li Bootcamp Instructor
+            li Software Testing
+            li Web Apps
+            li Software Servers
+            li Custom APIs
+      #training.aboutInfoBox
+        .infoBoxHeader.casscade
+          h3 Professional Summary
+        p.casscade
+          | Frontend-focused Web Developer with 10+ years of experience building scalable, high-performance applications using <strong>React, Next.js, and TypeScript</strong>. Strong background in <strong>full-stack development</strong> with Node.js, Express, GraphQL, and SQL/NoSQL databases. Adept at translating complex requirements into <strong>pixel-perfect, responsive UIs</strong>, improving performance, and mentoring junior developers. Experienced in <strong>Agile/Scrum, CI/CD, cloud platforms, and testing frameworks</strong>. Passionate about solving problems, contributing to open-source, and delivering business value through clean, maintainable code.
     #btnSection
       a(href="https://drive.google.com/file/d/1ietTD44UXzuG6nQYrSB4AcCMhZlFW1Zi/view" target="_blank")
         #resumeButton.button My Resume
+      a(href="https://drive.google.com/file/d/1AL8FqyRSmaO-eRwvrKgxQcWcFx9aTdvI/view" target="_blank")
+        #resumeButton.button My Resume (Compact)
       #contactButton.button Contact Me
   #projectsSection
     #projectsWrapper

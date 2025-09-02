@@ -18,7 +18,7 @@ a {
   -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%); }
 
-.centerHorizontal, #landingBottom, #btnSection {
+.centerHorizontal, #landingBottom {
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
@@ -392,9 +392,11 @@ body {
 #aboutSection strong {
   color: whitesmoke; }
 
+#aboutFlexContainer {
+  display: flex; }
+
 .aboutInfoBox {
-  width: 33%;
-  float: left; }
+  flex-basis: 33%; }
 
 .infoBoxHeader {
   width: 300px;
@@ -430,8 +432,7 @@ body {
   padding-right: 20px; }
 
 #btnSection {
-  position: absolute;
-  bottom: 100px; }
+  text-align: center; }
   #btnSection a {
     text-decoration: none; }
 

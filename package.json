@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "install": "npm ci --dry-run=false --ignore-scripts=true",
+    "build:pug": "pug views/index.pug --out docs --obj lib/pug-cli-context.js",
+    "build:copy": "ncp public/images docs/images && ncp public/javascripts docs/javascripts && ncp public/stylesheets docs/stylesheets && ncp public/vendor docs/vendor",
+    "build": "npm run build:pug && npm run build:copy",
     "postinstall": "npm rebuild node-sass"
   },
   "dependencies": {
@@ -20,6 +22,10 @@
     "nodemailer": "^4.4.1",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "pug-cli": "1.0.0-alpha6"
   },
   "engines": {
     "node": "16.17.1"
